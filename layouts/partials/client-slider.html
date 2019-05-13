@@ -1,0 +1,5 @@
+<div class="client-logo-slider d-flex align-items-center">
+  {{ range .Site.Data.homepage.clientSlider.item }}
+  <a href="{{ .URL }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></a>
+  {{ end }}
+</div>

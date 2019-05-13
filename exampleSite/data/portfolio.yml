@@ -1,0 +1,61 @@
+# portfolio filter list
+list:
+  - title : "UI/UX Design"
+    type : "design"
+    
+  - title : "BRANDING"
+    type : "branding"
+    
+  - title : ILLUSTRATION"
+    type : "illustration"
+
+# portfolio item
+item:
+  - image : "images/portfolio/item-1.png"
+    projectURL : "#"
+    projectType:
+      - type: "design"
+      - type: "illustration"
+      
+  - image : "images/portfolio/item-2.png"
+    projectURL : "#"
+    projectType:
+      - type: "branding"
+      
+  - image : "images/portfolio/item-3.png"
+    projectURL : "#"
+    projectType:
+      - type: "illustration"
+      
+  - image : "images/portfolio/item-6.png"
+    projectURL : "#"
+    projectType:
+      - type: "design"
+      - type: "branding"
+      
+  - image : "images/portfolio/item-8.png"
+    projectURL : "#"
+    projectType:
+      - type: "illustration"
+      
+  - image : "images/portfolio/item-5.png"
+    projectURL : "#"
+    projectType:
+      - type: "design"
+      
+  - image : "images/portfolio/item-1.png"
+    projectURL : "#"
+    projectType:
+      - type: "branding"
+      
+  - image : "images/portfolio/item-3.png"
+    projectURL : "#"
+    projectType:
+      - type: "design"
+      - type: "illustration"
+      - type: "branding"
+      
+  - image : "images/portfolio/item-7.png"
+    projectURL : "#"
+    projectType:
+      - type: "illustration"

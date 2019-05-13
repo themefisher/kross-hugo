@@ -1,0 +1,56 @@
+.page-title-alt{
+  padding: 350px 0 70px;
+}
+
+.border-thick{
+  border: 10px solid;
+}
+
+.drag-lg-top{
+  margin-top: -230px;
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.page-title-alt{
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  .bg-shape-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .bg-shape-2{
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+  .bg-shape-3{
+    position: absolute;
+    left: 30%;
+    top: 50px;
+    transform: rotate(180deg);
+  }
+
+  .bg-shape-4{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+  }
+
+  .bg-shape-5{
+    position: absolute;
+    left: 40%;
+    bottom: -25px;
+  }
+
+  .bg-shape-6{
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+  }
+}
