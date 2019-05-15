@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com/"
+baseURL = "https://kross.netlify.com"
 languageCode = "en-us"
 title = "Kross | Hugo Portfolio Template"
 theme = "kross-hugo"
@@ -32,22 +32,22 @@ summaryLength = "10"
     
   [[menu.main]]
   name = "About"
-  URL = "/about"
+  URL = "about"
   weight = 2
   
   [[menu.main]]
   name = "Blog"
-  URL = "/blog"
+  URL = "blog"
   weight = 3
   
   [[menu.main]]
   name = "Portfolio"
-  URL = "/portfolio"
+  URL = "portfolio"
   weight = 4
   
   [[menu.main]]
   name = "Contact"
-  URL = "/contact"
+  URL = "contact"
   weight = 5
 
 
