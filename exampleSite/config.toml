@@ -52,7 +52,7 @@ summaryLength = "10"
 
 
 [params]
-logo = "images/logo.png"
+logo = "images/logo.svg"
 home = "Home"
 # Meta data
 description = "This is meta description"
