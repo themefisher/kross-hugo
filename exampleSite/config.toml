@@ -1,7 +1,7 @@
 baseURL = "https://kross.netlify.com"
 languageCode = "en-us"
 title = "Kross | Hugo Portfolio Template"
-theme = "kross-hugo"
+theme = "kross-hugo-portfolio-template"
 summaryLength = "10"
 
 # Plugins
@@ -26,7 +26,6 @@ summaryLength = "10"
   URL = "plugins/shuffle/shuffle.min.js"
 
 
-  
 # navigation
 [menu]
     
@@ -52,7 +51,7 @@ summaryLength = "10"
 
 
 [params]
-logo = "images/logo.svg"
+logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
