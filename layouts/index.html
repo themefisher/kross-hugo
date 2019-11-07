@@ -252,7 +252,7 @@
         <div class="col-12 text-center">
           <h2 class="section-title">Blogs</h2>
         </div>
-        {{ range first 3 .Data.Pages }}
+        {{ range first 3 .Site.RegularPages }}
         <div class="col-lg-4 col-sm-6 mb-4">
           <article class="card shadow">
             <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
