@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | ![Homepage](https://user-images.githubusercontent.com/37659754/58154295-1a9c5300-7c93-11e9-992c-ad8d2ff8d99f.png) | ![About](https://user-images.githubusercontent.com/37659754/58154317-28ea6f00-7c93-11e9-914b-b7e5f1cdab0e.png) | ![Blog](https://user-images.githubusercontent.com/37659754/58154339-369ff480-7c93-11e9-9568-53b7ebdc6b2d.png) | ![portfolio](https://user-images.githubusercontent.com/37659754/58154368-491a2e00-7c93-11e9-8900-f5a6abe0a61d.png) | ![contact](https://user-images.githubusercontent.com/37659754/58154403-57684a00-7c93-11e9-9cea-ea28253a6f6a.png) |
 
-[Live Preview](https://themes.gohugo.io/theme/kross-hugo-portfolio-template/).
+[Live Preview](http://demo.themefisher.com/kross-hugo/).
 
 ## Quick Start
 Quick start options:
@@ -61,5 +61,5 @@ If you have questions or need help integrating the product please [contact us](m
 | **Hugo Mega Bundle**  | **Bexer**  | **Small Apps**  |
 | [![Dtox](https://user-images.githubusercontent.com/37659754/54068836-07284100-427b-11e9-8ff2-48eec3220a26.png)](https://themefisher.com/products/dtox-hugo-theme/) | [![Agico](https://user-images.githubusercontent.com/37659754/57753899-16aa8700-770f-11e9-9a3d-d3fc45313fbd.png)](https://themefisher.com/products/agico-hugo-theme/) | [![Airspace](https://user-images.githubusercontent.com/37659754/57754161-9d5f6400-770f-11e9-8a76-778fbb9910c4.png)](https://themefisher.com/products/airspace-hugo/) |
 | **Dtox** | **Agico** | **Airspace** |
-| [![Agen](https://user-images.githubusercontent.com/37659754/63633832-3a675c80-c670-11e9-8380-a7b5f8f82b76.png)](https://themefisher.com/products/agen-hugo-agency-template/) | [![Biztrox](https://user-images.githubusercontent.com/37659754/54068875-6ab26e80-427b-11e9-876e-4670bdacb975.png)](https://themefisher.com/products/biztrox-hugo-template/) |  [![Biztrox](https://user-images.githubusercontent.com/37659754/65814602-ce938900-e205-11e9-9d26-d5ad1b0cd1da.png)](https://gethugothemes.com/shop/) |
+| [![Agen](https://user-images.githubusercontent.com/37659754/63633832-3a675c80-c670-11e9-8380-a7b5f8f82b76.png)](https://themefisher.com/products/agen-hugo-agency-template/) | [![Biztrox](https://user-images.githubusercontent.com/37659754/54068875-6ab26e80-427b-11e9-876e-4670bdacb975.png)](https://themefisher.com/products/biztrox-hugo-template/) |  [![all](https://user-images.githubusercontent.com/37659754/65814602-ce938900-e205-11e9-9d26-d5ad1b0cd1da.png)](https://themefisher.com/hugo-themes/) |
 | **Agen** | **Biztrox** | **More Hugo Themes** |
