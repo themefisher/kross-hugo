@@ -43,6 +43,15 @@
     window.onload = function () {
 
         var parallaxBox = document.getElementById('parallax');
+        /*
+         Fix js error, occurred at pages other than the home page. 
+         When there're no parallax, just ignore the below
+         other operations, as below elements are bingding to the parallax.
+        */
+        if (!parallaxBox) {
+            return ;
+        }
+
         var
             /* c1left = document.getElementById('l1').offsetLeft,
             c1top = document.getElementById('l1').offsetTop, */
