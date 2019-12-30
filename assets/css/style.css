@@ -118,33 +118,37 @@ h6,
 }
 
 .btn-primary {
-  background: #41228e;
+  background: var(--primary-color);
   color: #fff
 }
 
+.btn-primary.active {
+  opacity: .8;
+}
+
 .btn-primary:active {
-  background: #542cb7 !important
+  background: var(--primary-color) !important
 }
 
 .btn-primary:hover {
-  background: #542cb7
+  background: var(--primary-color)
 }
 
 .btn-primary.focus,
 .btn-primary.active {
-  background: #542cb7 !important;
+  background: var(--primary-color) !important;
   box-shadow: none !important
 }
 
 .btn-transparent {
   background: transparent;
-  color: #41228e;
+  color: var(--primary-color);
   font-weight: 700
 }
 
 .btn-transparent:active,
 .btn-transparent:hover {
-  color: #41228e
+  color: var(--primary-color)
 }
 
 body {
@@ -153,7 +157,7 @@ body {
 }
 
 ::selection {
-  background: #542cb7;
+  background: var(--primary-color);
   color: #fff
 }
 
@@ -164,7 +168,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 999;
+  z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center
@@ -201,11 +205,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: #41228e !important
+  color: var(--primary-color) !important
 }
 
 a:hover {
-  color: #41228e
+  color: var(--primary-color)
 }
 
 .slick-slide {
@@ -252,7 +256,7 @@ a:hover {
 }
 
 .bg-primary {
-  background: #41228e !important
+  background: var(--primary-color) !important
 }
 
 .bg-gray {
@@ -260,7 +264,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #41228e !important
+  color: var(--primary-color) !important
 }
 
 .text-color {
@@ -392,7 +396,7 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #41228e;
+  border-color: var(--primary-color);
   outline: 0;
   box-shadow: none !important
 }
@@ -419,7 +423,7 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: #41228e;
+  background-color: var(--primary-color);
   padding: 15px 100px
 }
 
@@ -432,7 +436,7 @@ textarea.form-control {
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background: #41228e
+    background: var(--primary-color)
   }
 }
 
@@ -579,7 +583,7 @@ textarea.form-control {
 }
 
 .hover-bg-primary:hover {
-  background: #41228e
+  background: var(--primary-color)
 }
 
 .hover-bg-primary:hover * {
@@ -588,7 +592,7 @@ textarea.form-control {
 
 .active-bg-primary {
   transition: .3s ease;
-  background: #41228e
+  background: var(--primary-color)
 }
 
 .active-bg-primary * {
@@ -728,7 +732,7 @@ blockquote {
   display: inline-block;
   padding: 10px 20px;
   background: #eaeaea;
-  border-left: 2px solid #41228e;
+  border-left: 2px solid var(--primary-color);
   font-style: italic;
   font-size: 22px
 }

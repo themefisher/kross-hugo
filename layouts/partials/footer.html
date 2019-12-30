@@ -9,7 +9,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="{{.Site.Params.contact.formAction}}" method="POST" class="row">
+          <form action="{{.Site.Params.contact.form_action}}" method="POST" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -39,21 +39,21 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.email}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.email}}</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.phone}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.phone}}</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.address}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.address}}</p>
         </div>
       </div>
     </div>
   </div>
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Powered by <a href="https://themefisher.com/best-hugo-themes">Hugo Themes</a></p>
+    <p class="mb-0 text-light">{{ .Site.Params.copyright | markdownify }}</p>
   </div>
 </footer>
 <!-- /footer -->
@@ -71,6 +71,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
+  ga('create', '{{ .Site.Params.google_analitycs_id }}', 'auto');
   ga('send', 'pageview');
 </script>

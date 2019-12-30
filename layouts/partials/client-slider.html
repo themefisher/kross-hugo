@@ -1,5 +1,9 @@
 <div class="client-logo-slider d-flex align-items-center">
-  {{ range .Site.Data.homepage.clientSlider.item }}
-  <a href="{{ .URL }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></a>
+  {{ range .Site.Data.homepage.clients_logo_slider.item }}
+  {{ if and ( ne .URL "" ) ( ne .URL "#" ) }}
+  <a href="{{ .URL | safeURL }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></a>
+  {{ else }}
+  <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></span>
+  {{ end }}
   {{ end }}
 </div>

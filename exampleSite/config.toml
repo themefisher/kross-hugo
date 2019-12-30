@@ -1,73 +1,99 @@
+# default configuration
 baseURL = "https://kross.netlify.com"
 languageCode = "en-us"
-title = "Kross | Hugo Portfolio Template"
-theme = "kross-hugo-portfolio-template"
 summaryLength = "10"
+theme = "kross-test"
+title = "Kross | Hugo Portfolio Template"
 
-# Plugins
-[params.plugins]
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
 
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
 
 
-# navigation
-[menu]
-    
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 3
-  
-  [[menu.main]]
-  name = "Portfolio"
-  URL = "portfolio"
-  weight = 4
-  
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 5
+# js plugin
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
 
 
+# menu
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 2
+
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+
+[[menu.main]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 4
+
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 5
+
+
+# default parameters
 [params]
-logo = "images/logo.png"
 home = "Home"
-# Meta data
+logo = "images/logo.png"
+# theme color
+theme_color = "#41228e"
+# contact info
+phone = "+880 2544 658 256"
+email = "steve.fruits@email.com"
+address = "125/A, CA Commercial Area, California, USA"
+# meta description
+author = "Johnathan Smith"
 description = "This is meta description"
-author = "Themefisher"
-# Google Analitycs
-googleAnalitycsID = "Your ID"
+# google analitycs
+google_analitycs_id = "Your ID"
+# copyright
+copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 
-  # Preloader
-  [params.preloader]
-  enable = true
 
-  [params.contact]
-  enable = true
-  formAction = "#" #contact form works with formspree.io
+# contact
+[params.contact]
+enable = true
+form_action = "#" # contact form works with : https://formspree.io
 
-  [params.footer]
-  email = "steve.fruits@email.com"
-  phone = "+880 2544 658 256"
-  address = "125/A, CA Commercial Area, California, USA"
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# social site
+[[params.social]]
+URL = "#"
+icon = "ti-facebook"
+
+[[params.social]]
+URL = "#"
+icon = "ti-instagram"
+
+[[params.social]]
+URL = "#"
+icon = "ti-dribbble"
+
+[[params.social]]
+URL = "#"
+icon = "ti-twitter-alt"

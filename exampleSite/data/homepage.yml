@@ -1,31 +1,21 @@
 # banner
 banner:
   title : "Hi! I’m <br> Christoher <br> UX designer"
-  socialLinks:
-    - icon : "ti-facebook"
-      URL : "#"
-      
-    - icon : "ti-instagram"
-      URL : "#"
-      
-    - icon : "ti-dribbble"
-      URL : "#"
-      
-    - icon : "ti-twitter"
-      URL : "#"
 
 # about
 about:
   enable : true
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   button:
-    btnText : "know more"
-    URL : "/about"
+    enable : true
+    label : "know more"
+    URL : "about"
 
 # skill
 skill:
   enable : true
-  skillbar:
+  title : "Skills"
+  item:
     - title : "Web Design"
       progress : "90%"
       color : "#fdb157"
@@ -45,6 +35,7 @@ skill:
 # experience
 experience:
   enable : true
+  title : "Experience"
   item: 
     - logo : "images/experience/icon-1.png"
       title : "Junior UX Designer"
@@ -64,6 +55,7 @@ experience:
 # education
 education:
   enable : true
+  title : "Education"
   item:
     - title : "Marters in UX Design"
       year : "2006"
@@ -84,7 +76,8 @@ education:
 # service
 service:
   enable : true
-  item : 
+  title : "Services"
+  item:
     - title : "UI Design"
       icon : "ti-palette"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -103,25 +96,14 @@ service:
 # portfolio
 portfolio:
   enable : true
-  item:
-    - image : "images/portfolio/item-1.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-2.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-3.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-4.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-5.png"
-      projectURL : "#"
+  title : "Portfolio"
+  item_show : 5
+  # portfolio item comes from 'data/portfolio.yml' item.
 
 # testimonial
 testimonial:
   enable : true
+  title : "Testimonials"
   item:
     - name : "Jesica Gomez"
       image : "images/testimonial/client-1.png"
@@ -138,36 +120,36 @@ testimonial:
       designation : "CEO, Funder"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
-# client slider
-clientSlider:
+# client logo slider
+clients_logo_slider:
   enable : true
   item:
     - logo : "images/clients-logo/client-logo-1.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-2.png"
       URL : "#"
       
     - logo : "images/clients-logo/client-logo-3.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-4.png"
       URL : "#"
       
     - logo : "images/clients-logo/client-logo-5.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "#"
       
     - logo : "images/clients-logo/client-logo-2.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-3.png"
       URL : "#"
       
     - logo : "images/clients-logo/client-logo-4.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
@@ -175,3 +157,5 @@ clientSlider:
 # blog
 blog:
   enable : true
+  title : "Blogs"
+  # blog post comes from "content/blog" folder

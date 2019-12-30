@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.svg` | relURL}}" alt="bg-shape">
+      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
     </div>
     <div class="layer" id="l2">
       <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
@@ -38,8 +38,8 @@
     </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range .Site.Data.homepage.banner.socialLinks }}
-      <li class="mb-3"><a class="text-white" href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
+      {{ range .Site.Params.social }}
+      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
     </ul>
     <!-- /social icon -->
@@ -54,8 +54,10 @@
         <div class="col-lg-10 mx-auto text-center">
           {{ with .Site.Data.homepage.about }}
           <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.btnText}}</a>
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
           {{ end }}
           {{ end }}
         </div>
@@ -67,14 +69,15 @@
 
 
   {{ if .Site.Data.homepage.skill.enable }}
+  {{ with .Site.Data.homepage.skill }}
   <!-- skills -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-title">Skills</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
-        {{ range .Site.Data.homepage.skill.skillbar }}
+        {{ range .item }}
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
             <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
@@ -91,18 +94,20 @@
   </section>
   <!-- /skills -->
   {{ end }}
+  {{ end }}
 
   {{ if .Site.Data.homepage.experience.enable }}
+  {{ with .Site.Data.homepage.experience }}
   <!-- experience -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-lg-12 text-center">
-          <h2 class="section-title">Experience</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
-        {{ range .Site.Data.homepage.experience.item }}
+        {{ range .item }}
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo}}" alt="icon">
+          <img src="{{.logo | relURL }}" alt="icon">
           <p class="mb-0">{{.duration}}</p>
           <h4>{{.title }}</h4>
           <h6 class="text-light">{{.company }}</h6>
@@ -111,18 +116,20 @@
       </div>
     </div>
   </section>
-  <!-- ./experience -->
+  <!-- /experience -->
+  {{ end }}
   {{ end }}
 
   {{ if .Site.Data.homepage.education.enable }}
+  {{ with .Site.Data.homepage.education }}
   <!-- education -->
   <section class="section position-relative">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-title">Education</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
-        {{ range .Site.Data.homepage.education.item }}
+        {{ range .item }}
         <div class="col-lg-6 col-md-6 mb-80">
           <div class="d-flex">
             <div class="mr-lg-5 mr-3">
@@ -143,17 +150,19 @@
   </section>
   <!-- /education -->
   {{ end }}
+  {{ end }}
 
 
   {{ if .Site.Data.homepage.service.enable }}
+  {{ with .Site.Data.homepage.service }}
   <!-- services -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Services</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
-        {{ range .Site.Data.homepage.service.item }}
+        {{ range .item }}
         <div class="col-md-4 mb-4">
           <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
             <div class="card-body text-center px-4 py-5">
@@ -169,6 +178,7 @@
   </section>
   <!-- /services -->
   {{ end }}
+  {{ end }}
 
 
   {{ if .Site.Data.homepage.portfolio.enable }}
@@ -177,19 +187,22 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Portfolio</h2>
+          <h2 class="section-title">{{ .Site.Data.homepage.portfolio.title | markdownify }}</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
-        {{ range .Site.Data.homepage.portfolio.item }}
+        {{ $item:= .Site.Data.homepage.portfolio.item_show }}
+        {{ range first $item .Site.Data.portfolio.item }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
             <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+            {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .projectURL }}">view project</a>
+                <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
               </div>
             </div>
+            {{ end }}
           </div>
         </div>
         {{ end }}
@@ -201,15 +214,16 @@
 
 
   {{ if .Site.Data.homepage.testimonial.enable }}
+  {{ with .Site.Data.homepage.testimonial }}
   <!-- testimonial -->
   <section class="section bg-primary position-relative testimonial-bg-shapes">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">Testimonials</h2>
+          <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
         </div>
         <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .Site.Data.homepage.testimonial.item }}
+          {{ range .item }}
           <!-- slider-item -->
           <div class="text-center testimonial-content">
             <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
@@ -232,9 +246,10 @@
   </section>
   <!-- /testimonial -->
   {{ end }}
+  {{ end }}
 
 
-  {{ if .Site.Data.homepage.clientSlider.enable }}
+  {{ if .Site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->
   <section class="section pb-0">
     <div class="container">
@@ -250,20 +265,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Blogs</h2>
+          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
         </div>
         {{ range first 3 .Site.RegularPages }}
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
-              </h4>
-              <p class="cars-text">{{.Summary}}</p>
-              <a href="{{.Permalink}}" class="btn btn-xs btn-primary">Read More</a>
-            </div>
-          </article>
-        </div>
+        {{ .Render "post" }}
         {{ end }}
       </div>
     </div>
