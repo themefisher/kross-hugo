@@ -1,8 +1,8 @@
 # default configuration
-baseURL = "https://kross.netlify.com"
+baseURL = "http://examplesite.com"
 languageCode = "en-us"
 summaryLength = "10"
-theme = "kross-test"
+theme = "kross-hugo"
 title = "Kross | Hugo Portfolio Template"
 
 # css plugins
