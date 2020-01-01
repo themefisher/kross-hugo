@@ -58,8 +58,8 @@ Quick start options:
 At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
 
 ```
-$ git clone git@github.com:themefisher/airspace-hugo.git
-$ cd airspace-hugo/exampleSite/
+$ git clone git@github.com:themefisher/kross-hugo.git
+$ cd kross-hugo/exampleSite/
 $ hugo server --themesDir ../..
 ```
 
