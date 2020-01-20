@@ -10,3 +10,7 @@ min_version = "0.58.0"
 [author]
   name = "Themefisher"
   homepage = "https://themefisher.com/"
+
+[original]
+  name = "kross"
+  homepage = "https://themefisher.com/products/kross-creative-portfolio-template/"
