@@ -19,15 +19,15 @@ skill:
     - title : "Web Design"
       progress : "90%"
       color : "#fdb157"
-      
+
     - title : "Logo Design"
       progress : "60%"
       color : "#9473e6"
-      
+
     - title : "After Effects"
       progress : "80%"
       color : "#bdecf6"
-      
+
     - title : "Web App"
       progress : "70%"
       color : "#ffbcaa"
@@ -36,17 +36,17 @@ skill:
 experience:
   enable : true
   title : "Experience"
-  item: 
+  item:
     - logo : "images/experience/icon-1.png"
       title : "Junior UX Designer"
       company : "WEBEX"
       duration : "Jan 2007 - Feb 2009"
-      
+
     - logo : "images/experience/icon-2.png"
       title : "UX & UI Designer"
       company : "AUGMEDIX"
       duration : "Mar 2009 - Aug 2014"
-      
+
     - logo : "images/experience/icon-1.png"
       title : "Senior UI Designer"
       company : "THEMEFISHER"
@@ -60,15 +60,15 @@ education:
     - title : "Marters in UX Design"
       year : "2006"
       academy : "Masassusets Institute of Technology"
-      
+
     - title : "Honours in Fine Arts"
       year : "2004"
       academy : "Harvard University"
-      
+
     - title : "Higher Secondary Certificat"
       year : "2000"
       academy : "Cardiff School"
-      
+
     - title : "Secondary School Certificate"
       year : "1998"
       academy : "Cardiff School"
@@ -109,12 +109,12 @@ testimonial:
       image : "images/testimonial/client-1.png"
       designation : "CEO, Funder"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
+
     - name : "Shirley Scot"
       image : "images/testimonial/client-1.png"
       designation : "CEO, Funder"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
+
     - name : "Jessica Julie"
       image : "images/testimonial/client-1.png"
       designation : "CEO, Funder"
@@ -125,32 +125,32 @@ clients_logo_slider:
   enable : true
   item:
     - logo : "images/clients-logo/client-logo-1.png"
-      URL : "http://examplesite.com"
-      
+      URL : "http://roxieandgenevieve.us"
+
     - logo : "images/clients-logo/client-logo-2.png"
       URL : "#"
-      
+
     - logo : "images/clients-logo/client-logo-3.png"
-      URL : "http://examplesite.com"
-      
+      URL : "http://roxieandgenevieve.us"
+
     - logo : "images/clients-logo/client-logo-4.png"
       URL : "#"
-      
+
     - logo : "images/clients-logo/client-logo-5.png"
-      URL : "http://examplesite.com"
-      
+      URL : "http://roxieandgenevieve.us"
+
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "#"
-      
+
     - logo : "images/clients-logo/client-logo-2.png"
-      URL : "http://examplesite.com"
-      
+      URL : "http://roxieandgenevieve.us"
+
     - logo : "images/clients-logo/client-logo-3.png"
       URL : "#"
-      
+
     - logo : "images/clients-logo/client-logo-4.png"
-      URL : "http://examplesite.com"
-      
+      URL : "http://roxieandgenevieve.us"
+
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
 
