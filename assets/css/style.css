@@ -446,12 +446,12 @@ textarea.form-control {
   padding: 15px
 }
 
-.navbar .nav-item.active {
-  font-weight: 700
+.navbar .nav-item.active .nav-link{
+  color: #52f8f4;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff
+  color: #fff;
 }
 
 .hero-area {

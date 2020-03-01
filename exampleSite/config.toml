@@ -8,10 +8,8 @@ title = "Kross | Hugo Portfolio Template"
 # css plugins
 [[params.plugins.css]]
 URL = "plugins/bootstrap/bootstrap.min.css"
-
 [[params.plugins.css]]
 URL = "plugins/slick/slick.css"
-
 [[params.plugins.css]]
 URL = "plugins/themify-icons/themify-icons.css"
 
@@ -19,13 +17,10 @@ URL = "plugins/themify-icons/themify-icons.css"
 # js plugin
 [[params.plugins.js]]
 URL = "plugins/jQuery/jquery.min.js"
-
 [[params.plugins.js]]
 URL = "plugins/bootstrap/bootstrap.min.js"
-
 [[params.plugins.js]]
 URL = "plugins/slick/slick.min.js"
-
 [[params.plugins.js]]
 URL = "plugins/shuffle/shuffle.min.js"
 
