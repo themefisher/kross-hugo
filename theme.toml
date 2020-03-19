@@ -5,7 +5,7 @@ description = "Hugo port of the Themefisher’s Kross Template"
 homepage = "https://gethugothemes.com/products/kross-hugo-theme/"
 tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'resume', 'portfolio', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography']
 features = ['bootstrap','responsive']
-min_version = "0.58.0"
+min_version = "0.64.0"
 
 [author]
   name = "Themefisher"
