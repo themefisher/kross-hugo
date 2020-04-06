@@ -24,9 +24,9 @@ skill:
   - title: Rapid prototyping
     progress: 60%
     color: "#DCE56C"
-  - title: User research
+  - title: UX Research
     progress: 50%
-    color: "#6C9EF5"
+    color: "#FD877B"
 experience:
   enable: true
   title: Experience
