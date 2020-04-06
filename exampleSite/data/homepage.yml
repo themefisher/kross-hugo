@@ -18,9 +18,9 @@ skill:
   - title: Design systems
     progress: 95%
     color: "#C8BCFD"
-  - title: Web Design
+  - title: User Experience
     progress: 90%
-    color: "#fdb157"
+    color: "#FD877B"
   - title: Logo Design
     progress: 60%
     color: "#9473e6"
