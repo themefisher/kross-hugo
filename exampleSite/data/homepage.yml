@@ -13,7 +13,7 @@ about:
     URL: about
 skill:
   enable: true
-  title: Skills
+  title: Industry knowledge
   item:
   - title: Design systems
     progress: 95%
