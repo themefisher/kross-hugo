@@ -16,8 +16,8 @@ skill:
   title: Skills
   item:
   - title: Design systems
-    progress: ''
-    color: ''
+    progress: 95%
+    color: "#C8BCFD"
   - title: Web Design
     progress: 90%
     color: "#fdb157"
