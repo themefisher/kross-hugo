@@ -50,9 +50,9 @@ education:
   enable: true
   title: Education
   item:
-  - title: Marters in UX Design
-    year: "2006"
-    academy: Masassusets Institute of Technology
+  - title: MS in Computer Science
+    year: "2015"
+    academy: Dartmouth College
   - title: Honours in Fine Arts
     year: "2004"
     academy: Harvard University
