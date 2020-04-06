@@ -20,16 +20,17 @@ URL = "contact"
 name = "Contact"
 weight = 5
 [params]
-address = "125/A, CA Commercial Area, California, USA"
-author = "Johnathan Smith"
+address = "400 W 63rd Street Apartment 1804"
+author = "Runi Goswami"
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
-description = "This is meta description"
-email = "steve.fruits@email.com"
+description = "Runicorn design"
+email = "runigoswami@gmail.com"
 google_analytics_id = ""
 home = "Home"
 logo = "images/logo.png"
-phone = "+880 2544 658 256"
-theme_color = "#41228e"
+phone = "+1 571 345 8928"
+social = []
+theme_color = "#4323C0"
 [params.contact]
 enable = true
 form_action = "#"
@@ -50,15 +51,3 @@ URL = "plugins/shuffle/shuffle.min.js"
 [params.preloader]
 enable = true
 preloader = ""
-[[params.social]]
-URL = "#"
-icon = "ti-facebook"
-[[params.social]]
-URL = "#"
-icon = "ti-instagram"
-[[params.social]]
-URL = "#"
-icon = "ti-dribbble"
-[[params.social]]
-URL = "#"
-icon = "ti-twitter-alt"
