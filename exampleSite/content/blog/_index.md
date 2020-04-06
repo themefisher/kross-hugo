@@ -6,4 +6,4 @@ description: A framework for evaluating & improving the end-to-end UX of your pr
 image: "/images/definition.png"
 
 ---
-Blah
+A framework for evaluating & improving the end-to-end UX of your product platform.
