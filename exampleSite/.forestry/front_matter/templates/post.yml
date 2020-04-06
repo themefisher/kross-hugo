@@ -15,4 +15,5 @@ fields:
   name: description
   label: description
 pages:
+- exampleSite/content/blog/designing-for-interusability.md
 - exampleSite/data/resume.yml
