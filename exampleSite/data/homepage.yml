@@ -31,14 +31,14 @@ experience:
   enable: true
   title: Experience
   item:
-  - logo: images/dali-lab-logo.png
+  - logo: images/experience/icon-1.png
     title: Staff Lead Designer
     company: DALI Lab
     duration: Aug 2013 - Oct 2015
   - logo: images/experience/icon-2.png
-    title: UX & UI Designer
-    company: AUGMEDIX
-    duration: Mar 2009 - Aug 2014
+    title: Product Designer
+    company: Floored
+    duration: Apr 2016 - Jan 2017
   - logo: images/experience/icon-1.png
     title: Senior UI Designer
     company: THEMEFISHER
