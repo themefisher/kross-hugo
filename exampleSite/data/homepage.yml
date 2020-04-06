@@ -17,7 +17,7 @@ skill:
   item:
   - title: Design systems
     progress: 95%
-    color: "#C8BCFD"
+    color: "#FDB157"
   - title: UX Design
     progress: 90%
     color: "#FD877B"
