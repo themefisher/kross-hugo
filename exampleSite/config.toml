@@ -4,21 +4,9 @@ summaryLength = "10"
 theme = "kross-hugo"
 title = "Runi Goswami | Design Portfolio"
 [[menu.main]]
-URL = "about"
-name = "About"
-weight = 2
-[[menu.main]]
-URL = "blog"
-name = "Blog"
-weight = 3
-[[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
-weight = 4
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 5
+URL = "resume"
+name = "Resume"
+weight = ""
 [params]
 address = "400 W 63rd Street Apartment 1804"
 author = "Runi Goswami"
