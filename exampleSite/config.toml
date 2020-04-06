@@ -2,7 +2,7 @@ baseURL = "https://runi.netlify.com"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross | Hugo Portfolio Template"
+title = "Runi Goswami | Design Portfolio"
 [[menu.main]]
 URL = "about"
 name = "About"
