@@ -21,9 +21,9 @@ skill:
   - title: User Experience
     progress: 90%
     color: "#FD877B"
-  - title: Logo Design
+  - title: Interaction Design
     progress: 60%
-    color: "#9473e6"
+    color: "#DCE56C"
   - title: After Effects
     progress: 80%
     color: "#bdecf6"
