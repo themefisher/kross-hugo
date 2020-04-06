@@ -57,7 +57,7 @@ education:
     year: "2013"
     academy: Dartmouth College
 service:
-  enable: true
+  enable: false
   title: Services
   item:
   - title: UI Design
@@ -80,7 +80,7 @@ portfolio:
   title: Portfolio
   item_show: "5"
 testimonial:
-  enable: true
+  enable: false
   title: Testimonials
   item:
   - name: Jesica Gomez
