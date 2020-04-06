@@ -7,4 +7,4 @@ menu:
   main:
     URL: about
     name: Resume
-    weight: 2
+    weight: 3

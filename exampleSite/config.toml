@@ -7,7 +7,7 @@ title = "Runi Goswami | Design Portfolio"
 URL = "blog"
 name = "Writing"
 url = "https://medium.com/@loonyruni"
-weight = 3
+weight = 2
 [[menu.main]]
 URL = "portfolio"
 name = "Portfolio"
