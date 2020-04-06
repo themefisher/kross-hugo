@@ -24,9 +24,6 @@ skill:
   - title: Interaction Design
     progress: 60%
     color: "#DCE56C"
-  - title: Wireframing
-    progress: 80%
-    color: "#DCE56C"
   - title: UX Research
     progress: 50%
     color: "#6C9EF5"
