@@ -3,3 +3,8 @@ title: Resume.yml
 date: 
 image: "/images/RuniGoswami-SeniorUXDesigner.pdf"
 description: Resume
+menu:
+  main:
+    URL: about
+    name: Resume
+    weight: 2
