@@ -56,12 +56,6 @@ education:
   - title: BA in Neuroscience
     year: "2013"
     academy: Dartmouth College
-  - title: Higher Secondary Certificat
-    year: "2000"
-    academy: Cardiff School
-  - title: Secondary School Certificate
-    year: "1998"
-    academy: Cardiff School
 service:
   enable: true
   title: Services
