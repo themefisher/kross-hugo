@@ -24,9 +24,9 @@ skill:
   - title: Interaction Design
     progress: 60%
     color: "#DCE56C"
-  - title: After Effects
+  - title: Wireframing
     progress: 80%
-    color: "#bdecf6"
+    color: "#DCE56C"
   - title: Web App
     progress: 70%
     color: "#ffbcaa"
