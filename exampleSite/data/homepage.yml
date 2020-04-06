@@ -1,7 +1,7 @@
 ---
 banner:
-  title: 'Hi! I’m Runi, a senior product designer. <br> I create systems <br> that
-    help people build <br> better <br> user experiences. '
+  title: 'Hi! I’m Runi. <br> I create systems <br> that help people build <br> better
+    <br> user experiences. '
 about:
   enable: true
   content: 'I''m a senior product designer with 7 years of experience. I create systems
@@ -14,6 +14,9 @@ skill:
   enable: true
   title: Skills
   item:
+  - title: Design systems
+    progress: ''
+    color: ''
   - title: Web Design
     progress: 90%
     color: "#fdb157"
