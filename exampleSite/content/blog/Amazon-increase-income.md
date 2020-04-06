@@ -2,7 +2,7 @@
 title: The Quest for a Better Stacking Plan
 date: 2019-03-07T14:14:34+00:00
 image: "/images/Stax.png"
-description: This is meta description.
+description: ''
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
