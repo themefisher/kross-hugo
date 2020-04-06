@@ -27,9 +27,9 @@ skill:
   - title: Wireframing
     progress: 80%
     color: "#DCE56C"
-  - title: Web App
-    progress: 70%
-    color: "#ffbcaa"
+  - title: UX Research
+    progress: 50%
+    color: "#6C9EF5"
 experience:
   enable: true
   title: Experience
