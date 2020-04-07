@@ -1,7 +1,7 @@
 ---
 item:
 - image: images/portfolio/item-1.png
-  project_url: http://examplesite.com
+  project_url: http://runi.netlify.com/test
   category: design
 - image: images/portfolio/item-2.png
   project_url: "#"
