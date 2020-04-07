@@ -5,8 +5,8 @@ banner:
 about:
   enable: true
   content: I'm a Senior Product Designer with 7 years of experience. I like designing
-    systems and diagnosing interusability issues. Talk to me about perceptual neuroscience
-    or why magical education is trash these days.
+    systems and diagnosing interusability issues across platforms. Talk to me about
+    perceptual neuroscience or why magical education is trash these days.
   button:
     enable: false
     label: know more
