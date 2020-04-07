@@ -13,7 +13,7 @@ URL = "portfolio"
 name = "Portfolio"
 weight = 1
 [params]
-address = ""
+address = "New York, NY"
 author = "Runi Goswami"
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 description = "Runicorn design"
