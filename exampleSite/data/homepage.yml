@@ -33,17 +33,17 @@ experience:
   title: Experience
   item:
   - logo: images/experience/icon-1.png
-    title: Incubator co-founder
-    company: DALI Lab, Dartmouth College
-    duration: Aug 2013 - Oct 2015
+    title: Senior Product Designer
+    company: CBRE Build
+    duration: Jan 2017 - Present
   - logo: images/experience/icon-2.png
     title: Product Designer
     company: Floored
     duration: Apr 2016 - Jan 2017
   - logo: images/experience/icon-1.png
-    title: Senior Product Designer
-    company: CBRE Build
-    duration: Jan 2017 - Present
+    title: Incubator co-founder
+    company: DALI Lab, Dartmouth College
+    duration: Aug 2013 - Oct 2015
 education:
   enable: true
   title: Education
