@@ -7,13 +7,13 @@ title = "Runi Goswami | Design Portfolio"
 URL = "blog"
 name = "Writing"
 url = "https://medium.com/@loonyruni"
-weight = 2
+weight = 3
 [[menu.main]]
 URL = "portfolio"
 name = "Portfolio"
 weight = 1
 [params]
-address = "400 W 63rd Street Apartment 1804"
+address = ""
 author = "Runi Goswami"
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 description = "Runicorn design"
