@@ -1,12 +1,10 @@
+// Preloader js    
+$(window).on('load', function () {
+    $('.preloader').fadeOut(100);
+});
+
 (function ($) {
     'use strict';
-
-
-    // Preloader js    
-    $(window).on('load', function () {
-        $('.preloader').fadeOut(100);
-    });
-
 
     // Sticky Menu
     $(window).scroll(function () {
@@ -49,7 +47,7 @@
          other operations, as below elements are bingding to the parallax.
         */
         if (!parallaxBox) {
-            return ;
+            return;
         }
 
         var
