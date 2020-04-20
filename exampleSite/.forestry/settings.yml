@@ -4,34 +4,50 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: exampleSite/content/portfolio
-  label: Portfolio
-  create: none
-  match: "*"
+- type: document
+  path: exampleSite/data/homepage.yml
+  label: Homepage
+  match: "**/*"
+- type: heading
+  label: Blog Post
+- type: document
+  path: exampleSite/content/blog/_index.md
+  label: Blog Page
 - type: directory
   path: exampleSite/content/blog
-  label: Post
+  label: Blog Post
   create: documents
   match: "*"
+  exclude: _index.md
   templates:
   - post
-- type: directory
-  path: exampleSite/content/about
+- type: heading
+  label: Portfolio
+- type: document
+  path: exampleSite/content/portfolio/_index.md
+  label: Portfolio Page
+  match: "**/*"
+- type: document
+  path: exampleSite/data/portfolio.yml
+  label: Portfolio Items
+- type: heading
   label: About
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/data
-  label: Data
-  create: documents
-  match: "*"
-  new_doc_ext: yml
+- type: document
+  path: exampleSite/content/about/_index.md
+  label: About Page
+  match: "**/*"
+- type: document
+  path: exampleSite/data/about.yml
+  label: About Data
+- type: heading
+  label: Others Page
 - type: directory
   path: exampleSite/content/contact
   label: Contact
   create: none
   match: "*"
+- type: heading
+  label: Configuration
 - type: directory
   path: exampleSite
   label: Configuration
@@ -53,4 +69,4 @@ build:
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public
-version: 0.58.2
+version: 0.69.0
