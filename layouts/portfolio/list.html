@@ -11,11 +11,13 @@
           <label class="btn btn-sm btn-primary active">
             <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
           </label>
-          {{ $categories := slice }}
-          {{ range .Site.Data.portfolio.item }}
-          {{ $categories = $categories | append .category }}
-          {{ end }}
-          {{ range ( $categories | uniq ) }}
+					{{ $categories := slice }}
+					{{ range .Site.Data.portfolio.item }}
+					{{ range .categories }}
+					{{ $categories = $categories | append . }}
+					{{ end }}
+					{{ end }}
+					{{ range ( $categories | uniq ) }}
           <label class="btn btn-sm btn-primary">
             <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
@@ -25,7 +27,7 @@
     </div>
     <div class="row shuffle-wrapper">
       {{ range .Site.Data.portfolio.item }}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;{{.category | urlize}}&quot;]">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
         <div class="position-relative rounded hover-wrapper">
           <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}

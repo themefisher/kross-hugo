@@ -1,40 +1,49 @@
 # portfolio item
 item:
-  - image : "images/portfolio/item-1.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-1.png"
     project_url : "http://examplesite.com"
-    category: "design"
+    categories: ["design","development"]
       
-  - image : "images/portfolio/item-2.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-2.png"
     project_url : "#"
-    category: "branding"
+    categories: ["branding"]
       
-  - image : "images/portfolio/item-3.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-3.png"
     project_url : "http://examplesite.com"
-    category: "illustration"
+    categories: ["illustration"]
       
-  - image : "images/portfolio/item-5.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-5.png"
     project_url : "#"
-    category: "design"
+    categories: ["design"]
       
-  - image : "images/portfolio/item-8.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-8.png"
     project_url : "http://examplesite.com"
-    category: "illustration"
+    categories: ["illustration","development"]
       
-  - image : "images/portfolio/item-6.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-6.png"
     project_url : "#"
-    category: "design"
+    categories: ["design"]
       
-  - image : "images/portfolio/item-1.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-1.png"
     project_url : "http://examplesite.com"
-    category: "branding"
+    categories: ["branding"]
       
-  - image : "images/portfolio/item-3.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-3.png"
     project_url : "#"
-    category: "illustration"
+    categories: ["illustration","development"]
       
-  - image : "images/portfolio/item-7.png"
+  - title : "Portfolio Item"
+    image : "images/portfolio/item-7.png"
     project_url : "http://examplesite.com"
-    category: "branding"
+    categories: ["branding"]
 
 
 # client logo slider
