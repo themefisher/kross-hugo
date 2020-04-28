@@ -10,12 +10,12 @@
     </div>
   </div>
   <!-- background shapes -->
-  <img src="{{`images/illustrations/page-title.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="{{`images/illustrations/dots-group-sm.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
-  <img src="{{`images/illustrations/leaf-yellow.svg`| relURL}}" alt="illustrations" class="bg-shape-3">
-  <img src="{{`images/illustrations/leaf-orange.svg`| relURL}}" alt="illustrations" class="bg-shape-4">
-  <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
-  <img src="{{`images/illustrations/leaf-cyan-lg.svg`| relURL}}" alt="illustrations" class="bg-shape-6">
+  <img src="{{ `images/illustrations/page-title.png`| relURL }}" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{ `images/illustrations/dots-group-sm.svg`| relURL }}" alt="illustrations" class="bg-shape-2">
+  <img src="{{ `images/illustrations/leaf-yellow.svg`| relURL }}" alt="illustrations" class="bg-shape-3">
+  <img src="{{ `images/illustrations/leaf-orange.svg`| relURL }}" alt="illustrations" class="bg-shape-4">
+  <img src="{{ `images/illustrations/dots-group-cyan.svg`| relURL }}" alt="illustrations" class="bg-shape-5">
+  <img src="{{ `images/illustrations/leaf-cyan-lg.svg`| relURL }}" alt="illustrations" class="bg-shape-6">
 </section>
 <!-- /page title -->
 
@@ -28,10 +28,10 @@
       </div>
       <div class="col-md-4 text-center drag-lg-top">
         <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
+          <img src="{{ .Params.author_image | absURL }}" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
+        <img src="{{ .Params.author_signature | absURL }}" alt="signature" class="img-fluid">
         <h4>{{ .Site.Params.Author }}</h4>
       </div>
     </div>
@@ -65,7 +65,7 @@
 <!-- team -->
 {{ if .Site.Data.about.team.enable }}
 {{ with .Site.Data.about.team }}
-<section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
+<section class="section bg-cover" data-background="{{ `images/backgrounds/team-bg.png` | relURL }}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -76,8 +76,8 @@
         <div class="card text-center">
           <img src="{{ .image | absURL }}" class="card-img-top">
           <div class="card-body">
-            <h4 class="card-title">{{.title }}</h4>
-            <p class="text-light font-secondary">{{.designation }}</p>
+            <h4 class="card-title">{{ .title }}</h4>
+            <p class="text-light font-secondary">{{ .designation }}</p>
           </div>
         </div>
       </div>

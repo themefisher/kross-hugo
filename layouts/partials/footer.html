@@ -1,6 +1,6 @@
 {{ if .Site.Params.contact.enable }}
 <!-- contact -->
-<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+<section class="section section-on-footer" data-background="{{ `images/backgrounds/bg-dots.png` | absURL }}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -9,7 +9,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="{{.Site.Params.contact.form_action}}" method="POST" class="row">
+          <form action="{{ .Site.Params.contact.form_action }}" method="POST" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -39,15 +39,15 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.email}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{ .Site.Params.email }}</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.phone}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{ .Site.Params.phone }}</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.address}}</p>
+          <p class="text-white paragraph-lg font-secondary">{{ .Site.Params.address }}</p>
         </div>
       </div>
     </div>
@@ -59,12 +59,12 @@
 <!-- /footer -->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
-{{ range .Site.Params.plugins.js}}
+{{ range .Site.Params.plugins.js }}
 <script src="{{ .URL | absURL }}"></script>
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
+{{ $script := resources.Get "js/script.js" | minify }}
 <script src="{{ $script.Permalink }}"></script>
 
 {{ "<!-- google analytics -->" | safeHTML }}

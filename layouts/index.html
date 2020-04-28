@@ -10,36 +10,36 @@
       </div>
     </div>
     <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
+      <img class="img-fluid w-100" src="{{ `images/illustrations/leaf-bg.png` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l2">
-      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/dots-cyan.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l3">
-      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l4">
-      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/dots-orange.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l5">
-      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/leaf-yellow.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l6">
-      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l7">
-      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/dots-group-orange.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l8">
-      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape">
     </div>
     <div class="layer" id="l9">
-      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
+      <img src="{{ `images/illustrations/leaf-cyan-2.svg` | relURL }}" alt="bg-shape">
     </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range .Site.Params.social }}
-      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      <li class="mb-3"><a class="text-white" href="{{ .URL | safeURL }}"><i class="{{ .icon }}"></i></a></li>
       {{ end }}
     </ul>
     <!-- /social icon -->
@@ -53,10 +53,10 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           {{ with .Site.Data.homepage.about }}
-          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          <p class="font-secondary lead text-dark">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{ .label }}</a>
           {{ end }}
           {{ end }}
           {{ end }}
@@ -80,11 +80,11 @@
         {{ range .item }}
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
-              <div class="wave" data-progress="{{.progress}}"></div>
+            <div class="position-relative rounded-top progress-wrapper" data-color="{{ .color }}">
+              <div class="wave" data-progress="{{ .progress }}"></div>
             </div>
             <div class="card-footer bg-white">
-              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
+              <h4 class="card-title">{{ .title }} ({{ .progress }})</h4>
             </div>
           </div>
         </div>
@@ -107,10 +107,10 @@
         </div>
         {{ range .item }}
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
+          <img src="{{ .logo | relURL }}" alt="icon">
+          <p class="mb-0">{{ .duration }}</p>
           <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
+          <h6 class="text-light">{{ .company }}</h6>
         </div>
         {{ end }}
       </div>
@@ -136,9 +136,9 @@
               <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
             </div>
             <div>
-              <p class="text-dark mb-1">{{.year}}</p>
+              <p class="text-dark mb-1">{{ .year }}</p>
               <h4>{{ .title }}</h4>
-              <p class="mb-0 text-light">{{.academy}}</p>
+              <p class="mb-0 text-light">{{ .academy }}</p>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
       </div>
     </div>
     <!-- bg image -->
-    <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
+    <img class="img-fluid edu-bg-image w-100" src="{{ `images/backgrounds/education-bg.png` | relURL }}" alt="bg-image">
   </section>
   <!-- /education -->
   {{ end }}
@@ -164,11 +164,11 @@
         </div>
         {{ range .item }}
         <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+          <div class="card {{ if .highlighted }} active-bg-primary {{ end }} hover-shadow shadow">
             <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
+              <i class="{{ .icon }} icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">{{ .title }}</h4>
+              <p>{{ .content | markdownify }}</p>
             </div>
           </div>
         </div>
@@ -227,9 +227,9 @@
           <!-- slider-item -->
           <div class="text-center testimonial-content">
             <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-            <p class="text-white mb-4">{{.content | markdownify}}</p>
+            <p class="text-white mb-4">{{ .content | markdownify }}</p>
             <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
-            <h4 class="text-white">{{.name }}</h4>
+            <h4 class="text-white">{{ .name }}</h4>
             <h6 class="text-light mb-4">{{ .designation }}</h6>
           </div>
           {{ end }}
@@ -237,12 +237,12 @@
       </div>
     </div>
     <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
+    <img src="{{ `images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
+    <img src="{{ `images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
+    <img src="{{ `images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
+    <img src="{{ `images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
+    <img src="{{ `images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
+    <img src="{{ `images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
   </section>
   <!-- /testimonial -->
   {{ end }}
@@ -265,7 +265,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
+          <h2 class="section-title">{{ .Site.Data.homepage.blog.title | markdownify }}</h2>
         </div>
         {{ range first 3 .Site.RegularPages }}
         {{ .Render "post" }}
