@@ -78,17 +78,17 @@ preloader = "" # use png, jpg, svg or gif format
 
 # social site
 [[params.social]]
-URL = "#"
 icon = "ti-facebook"
+URL = "#"
 
 [[params.social]]
-URL = "#"
 icon = "ti-instagram"
+URL = "#"
 
 [[params.social]]
-URL = "#"
 icon = "ti-dribbble"
+URL = "#"
 
 [[params.social]]
-URL = "#"
 icon = "ti-twitter-alt"
+URL = "#"
