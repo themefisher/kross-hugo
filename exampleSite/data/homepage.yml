@@ -19,8 +19,8 @@ skill:
   - title: R
     progress: 100%
     color: "#fdb157"
-  - title: Excel
-    progress: 100%
+  - title: Python
+    progress: 40%
     color: "#9473e6"
   - title: Tableau
     progress: 40%
