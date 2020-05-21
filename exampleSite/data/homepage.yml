@@ -22,8 +22,8 @@ skill:
   - title: Excel
     progress: 100%
     color: "#9473e6"
-  - title: After Effects
-    progress: 80%
+  - title: Python
+    progress: 40%
     color: "#bdecf6"
   - title: Web App
     progress: 70%
