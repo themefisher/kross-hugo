@@ -37,9 +37,9 @@ experience:
     company: Czech Statistical Office
     duration: Feb 2020 - Present
   - logo: images/experience/icon-2.png
-    title: UX & UI Designer
-    company: AUGMEDIX
-    duration: Mar 2009 - Aug 2014
+    title: Freelance Educational Writer
+    company: Superprof
+    duration: Feb 2019 - Feb 2020
   - logo: images/experience/icon-1.png
     title: Senior UI Designer
     company: THEMEFISHER
@@ -84,7 +84,7 @@ portfolio:
   title: Portfolio
   item_show: "5"
 testimonial:
-  enable: true
+  enable: false
   title: Testimonials
   item:
   - name: Jesica Gomez
