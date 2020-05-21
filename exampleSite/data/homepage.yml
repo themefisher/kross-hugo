@@ -33,6 +33,10 @@ experience:
   title: Experience
   item:
   - logo: images/experience/icon-1.png
+    title: Energy and Industry Analyst
+    company: Czech Statistical Office
+    duration: Feb 2020 - Present
+  - logo: images/experience/icon-1.png
     title: Job Shadowing
     company: Eurostat
     duration: Sep 2019
@@ -40,10 +44,6 @@ experience:
     title: Data Analyst
     company: Superprof
     duration: Sep 2018 - Feb 2019
-  - logo: images/experience/icon-1.png
-    title: Energy and Industry Analyst
-    company: Czech Statistical Office
-    duration: Feb 2020 - Present
   - logo: images/experience/icon-2.png
     title: Freelance Educational Writer
     company: Superprof
