@@ -16,6 +16,9 @@ skill:
   enable: true
   title: Skills
   item:
+  - title: R
+    progress: 100%
+    color: ''
   - title: Web Design
     progress: 90%
     color: "#fdb157"
