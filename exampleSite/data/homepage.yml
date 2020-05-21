@@ -74,10 +74,11 @@ service:
       and non-parametric tests, creating static and dynamic data visualizations, displaying
       content with R markdown, creating websites using the blogdown package and more. '
     highlighted: false
-  - title: UX Design
+  - title: Data Visualizations
     icon: ti-vector
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    content: 'Skilled at creating static and dynamic dashboards in R, Tableau and
+      Excel. This includes interactive dashboards, choropleth maps, pivot charts and
+      more. '
     highlighted: true
   - title: Interaction Design
     icon: ti-panel
