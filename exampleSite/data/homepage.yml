@@ -18,7 +18,7 @@ skill:
   item:
   - title: R
     progress: 100%
-    color: ''
+    color: "#fdb157"
   - title: Web Design
     progress: 90%
     color: "#fdb157"
