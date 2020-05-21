@@ -80,10 +80,11 @@ service:
       Excel. This includes interactive dashboards, choropleth maps, pivot charts and
       more. '
     highlighted: true
-  - title: Interaction Design
+  - title: Research Assistance
     icon: ti-panel
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    content: 'Experienced in analyzing quantitative academic papers, understanding
+      complex survey methodology, conducting thorough investigative research and condensing
+      information into valuable, user-friendly reports. '
     highlighted: false
 portfolio:
   enable: true
