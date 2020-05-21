@@ -52,9 +52,9 @@ education:
   enable: true
   title: Education
   item:
-  - title: Marters in UX Design
-    year: "2006"
-    academy: Masassusets Institute of Technology
+  - title: Marters in Applied Statistics
+    year: 2019 - 2020
+    academy: University of Economics Prague
   - title: Honours in Fine Arts
     year: "2004"
     academy: Harvard University
