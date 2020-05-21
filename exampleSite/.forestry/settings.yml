@@ -7,7 +7,6 @@ sections:
 - type: document
   path: exampleSite/data/homepage.yml
   label: Homepage
-  match: "**/*"
 - type: heading
   label: Blog Post
 - type: document
@@ -26,7 +25,6 @@ sections:
 - type: document
   path: exampleSite/content/portfolio/_index.md
   label: Portfolio Page
-  match: "**/*"
 - type: document
   path: exampleSite/data/portfolio.yml
   label: Portfolio Items
@@ -35,7 +33,6 @@ sections:
 - type: document
   path: exampleSite/content/about/_index.md
   label: About Page
-  match: "**/*"
 - type: document
   path: exampleSite/data/about.yml
   label: About Data
