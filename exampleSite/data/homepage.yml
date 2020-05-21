@@ -3,11 +3,11 @@ banner:
   title: Welcome to the <br> Future of Data Analysis!
 about:
   enable: true
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
+  content: 'What are the advantages of using R and Python and which one is better
+    for data science? I get it: it can get confusing to navigate a world full of data
+    and data software. Luckily, you can join me on my mission to untangle methods
+    of analysis, demystify statistical computer languages and showcase quantitative
+    stories.'
   button:
     enable: true
     label: know more
