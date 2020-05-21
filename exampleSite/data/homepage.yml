@@ -61,9 +61,9 @@ education:
   - title: BA in Literature Cum Laude
     year: "2018"
     academy: American University of Paris
-  - title: Secondary School Certificate
-    year: "1998"
-    academy: Cardiff School
+  - title: International Baccalaureate Diploma
+    year: "2014"
+    academy: Mission Viejo High School
 service:
   enable: true
   title: Services
