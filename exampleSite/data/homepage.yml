@@ -68,10 +68,11 @@ service:
   enable: true
   title: Services
   item:
-  - title: UI Design
+  - title: R Data Analysis
     icon: ti-palette
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    content: 'Data analysis in R including data preperation, EDA, running parametric
+      and non-parametric tests, creating static and dynamic data visualizations, displaying
+      content with R markdown, creating websites using the blogdown package and more. '
     highlighted: false
   - title: UX Design
     icon: ti-vector
