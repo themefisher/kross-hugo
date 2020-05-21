@@ -29,6 +29,7 @@ google_analytics_id = ""
 home = "Home"
 logo = "images/logo.png"
 phone = ""
+social = []
 theme_color = "#5271FF"
 [params.contact]
 enable = true
@@ -50,15 +51,3 @@ URL = "plugins/shuffle/shuffle.min.js"
 [params.preloader]
 enable = true
 preloader = ""
-[[params.social]]
-URL = "#"
-icon = "ti-facebook"
-[[params.social]]
-URL = "#"
-icon = "ti-instagram"
-[[params.social]]
-URL = "#"
-icon = "ti-dribbble"
-[[params.social]]
-URL = "#"
-icon = "ti-twitter-alt"
