@@ -19,11 +19,8 @@ skill:
   - title: R
     progress: 100%
     color: "#fdb157"
-  - title: Web Design
-    progress: 90%
-    color: "#fdb157"
-  - title: Logo Design
-    progress: 60%
+  - title: Excel
+    progress: 100%
     color: "#9473e6"
   - title: After Effects
     progress: 80%
