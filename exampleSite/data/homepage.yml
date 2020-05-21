@@ -33,6 +33,10 @@ experience:
   title: Experience
   item:
   - logo: images/experience/icon-1.png
+    title: Job Shadowing
+    company: Eurostat
+    duration: Sep 2019
+  - logo: images/experience/icon-1.png
     title: Energy and Industry Analyst
     company: Czech Statistical Office
     duration: Feb 2020 - Present
