@@ -25,8 +25,8 @@ skill:
   - title: Excel
     progress: 100%
     color: "#bdecf6"
-  - title: Web App
-    progress: 70%
+  - title: Tableau
+    progress: 60%
     color: "#ffbcaa"
 experience:
   enable: true
