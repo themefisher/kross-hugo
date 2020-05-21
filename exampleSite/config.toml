@@ -2,7 +2,7 @@ baseURL = "https://culturecat.netlify.app"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross | Hugo Portfolio Template"
+title = "Culture Cat"
 [[menu.main]]
 URL = "about"
 name = "About"
@@ -20,15 +20,15 @@ URL = "contact"
 name = "Contact"
 weight = 4
 [params]
-address = "125/A, CA Commercial Area, California, USA"
-author = "Johnathan Smith"
+address = ""
+author = "Danica Cortez"
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 description = "This is meta description"
-email = "steve.fruits@email.com"
+email = "culturecat.help@gmail.com"
 google_analytics_id = ""
 home = "Home"
 logo = "images/logo.png"
-phone = "+880 2544 658 256"
+phone = ""
 theme_color = "#41228e"
 [params.contact]
 enable = true
