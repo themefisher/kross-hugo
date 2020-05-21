@@ -22,8 +22,8 @@ skill:
   - title: Python
     progress: 40%
     color: "#9473e6"
-  - title: Tableau
-    progress: 40%
+  - title: Excel
+    progress: 100%
     color: "#bdecf6"
   - title: Web App
     progress: 70%
