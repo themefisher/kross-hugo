@@ -14,7 +14,7 @@ about:
     URL: about
 skill:
   enable: true
-  title: Skills
+  title: Technical Skills
   item:
   - title: R
     progress: 100%
@@ -22,7 +22,7 @@ skill:
   - title: Excel
     progress: 100%
     color: "#9473e6"
-  - title: Python
+  - title: Tableau
     progress: 40%
     color: "#bdecf6"
   - title: Web App
