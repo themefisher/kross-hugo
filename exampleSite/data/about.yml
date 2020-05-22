@@ -15,10 +15,13 @@ work_process:
       Born in California, Danica Cortez is a proud latina who has traveled the world through academic and professional opportunities. From completing her undergraduate degree in France to participating in Eurostat’s job shadowing program in Luxembourg, Danica is always looking for challenging opportunities in her career and personal life.
 
       Currently completing her Master of Science in Applied Statistics in the beautiful city of Prague, she hopes to continue to innovate the field of data science.
-  - title: Deliver
+  - title: Interests
     icon: images/icons/print.png
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    content: "Outside of her passion for data science, Danica also loves trying new
+      recipes, gardening and traveling. She is slowly progressing in her goal to visit
+      every Eurasian country.\n\nHaving developed an interest in yoga, she also believes
+      that taking a moment to yourself everyday to practice mindfulness can go a long
+      way in transforming limiting thoughts into productive, healthy habits. "
 team:
   enable: false
   title: My Team
