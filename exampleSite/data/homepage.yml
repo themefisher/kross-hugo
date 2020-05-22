@@ -72,7 +72,8 @@ service:
     icon: ti-vector
     content: 'Skilled at creating static and dynamic dashboards in R, Tableau and
       Excel. This includes interactive dashboards, choropleth maps, pivot charts and
-      more. '
+      more. These visualizations can be displayed using R markdown, Canva, MS word
+      and more.  '
     highlighted: false
   - title: R Data Analysis
     icon: ti-palette
