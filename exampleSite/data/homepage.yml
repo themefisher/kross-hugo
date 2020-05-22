@@ -68,18 +68,18 @@ service:
   enable: true
   title: Services
   item:
+  - title: Data Visualizations
+    icon: ti-vector
+    content: 'Skilled at creating static and dynamic dashboards in R, Tableau and
+      Excel. This includes interactive dashboards, choropleth maps, pivot charts and
+      more. '
+    highlighted: false
   - title: R Data Analysis
     icon: ti-palette
     content: 'Data analysis in R including data preperation, EDA, running parametric
       and non-parametric tests, creating static and dynamic data visualizations, displaying
       content with R markdown, creating websites using the blogdown package and more. '
     highlighted: false
-  - title: Data Visualizations
-    icon: ti-vector
-    content: 'Skilled at creating static and dynamic dashboards in R, Tableau and
-      Excel. This includes interactive dashboards, choropleth maps, pivot charts and
-      more. '
-    highlighted: true
   - title: Research Assistance
     icon: ti-panel
     content: 'Experienced in analyzing quantitative academic papers, understanding
