@@ -76,10 +76,10 @@ service:
     highlighted: false
   - title: R Data Analysis
     icon: ti-palette
-    content: 'Data analysis in R including data preperation, EDA, running parametric
+    content: 'Data analysis in R including data preparation, EDA, running parametric
       and non-parametric tests, creating static and dynamic data visualizations, displaying
       content with R markdown, creating websites using the blogdown package and more. '
-    highlighted: false
+    highlighted: true
   - title: Research Assistance
     icon: ti-panel
     content: 'Experienced in analyzing quantitative academic papers, understanding
