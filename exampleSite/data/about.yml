@@ -17,11 +17,10 @@ work_process:
       Currently completing her Master of Science in Applied Statistics in the beautiful city of Prague, she hopes to continue to innovate the field of data science.
   - title: Interests
     icon: images/icons/design.png
-    content: "Outside of her passion for data science, Danica also loves trying new
-      recipes, gardening and traveling. She is slowly progressing in her goal to visit
-      every Eurasian country.\n\nHaving developed an interest in yoga, she also believes
-      that taking a moment to yourself everyday to practice mindfulness can go a long
-      way in transforming limiting thoughts into productive, healthy habits. "
+    content: |2-
+       <p style="text-align:left;">Outside of her passion for data science, Danica also loves trying new recipes, gardening and traveling. She is slowly progressing in her goal to visit every Eurasian country.
+
+      Having developed an interest in yoga, she also believes that taking a moment to yourself everyday to practice mindfulness can go a long way in transforming limiting thoughts into productive, healthy habits.</p>
 team:
   enable: false
   title: My Team
