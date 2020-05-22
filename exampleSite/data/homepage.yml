@@ -52,7 +52,7 @@ education:
   enable: true
   title: Education
   item:
-  - title: Marters in Applied Statistics
+  - title: Masters in Applied Statistics
     year: "2020"
     academy: University of Economics Prague
   - title: BA in Economics and Applied Statistics Cum Laude
