@@ -20,7 +20,7 @@ URL = "contact"
 name = "Contact"
 weight = 4
 [params]
-address = ""
+address = "Prague, Czech Republic"
 author = "Danica Cortez"
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 description = "This is meta description"
@@ -28,7 +28,7 @@ email = "culturecat.help@gmail.com"
 google_analytics_id = ""
 home = "Home"
 logo = "/images/output-onlinepngtools.png"
-phone = ""
+phone = "N/A"
 social = []
 theme_color = "#5271FF"
 [params.contact]
