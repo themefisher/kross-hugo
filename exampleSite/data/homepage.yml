@@ -69,7 +69,7 @@ service:
   title: Services
   item:
   - title: Data Visualizations
-    icon: ti-vector
+    icon: ti-palette
     content: 'Skilled at creating static and dynamic dashboards in R, Tableau and
       Excel. This includes interactive dashboards, choropleth maps, pivot charts and
       more. These visualizations can be displayed using R markdown, Canva, MS word
