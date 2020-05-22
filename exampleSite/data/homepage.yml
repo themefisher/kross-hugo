@@ -76,7 +76,7 @@ service:
       and more.  '
     highlighted: false
   - title: R Data Analysis
-    icon: ti-palette
+    icon: ti-vector
     content: 'Data analysis in R including data preparation, EDA, running parametric
       and non-parametric tests, creating static and dynamic data visualizations, displaying
       content with R markdown, creating websites using the blogdown package and more. '
