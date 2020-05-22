@@ -1,12 +1,14 @@
 ---
 work_process:
   enable: true
-  title: Work Process
+  title: About the Author
   item:
-  - title: Research and Plan
+  - title: Work Ethic
     icon: images/icons/plan.png
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    content: |-
+      “Lo que fácil viene, fácil se va”
+
+      With the personal and professional philosophy that the most rewarding things in life require hard work, Danica welcomes adversity as a sign of something brighter on the horizon.
   - title: Design and Develop
     icon: images/icons/design.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
