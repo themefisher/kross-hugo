@@ -32,7 +32,7 @@ phone = "N/A"
 social = []
 theme_color = "#5271FF"
 [params.contact]
-enable = false
+enable = true
 form_action = "#"
 [[params.plugins.css]]
 URL = "plugins/bootstrap/bootstrap.min.css"
