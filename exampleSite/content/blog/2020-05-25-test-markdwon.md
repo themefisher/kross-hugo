@@ -3,20 +3,20 @@
 +++
 For this project, I used the following packages:
 
--   glue
--   dplyr
--   tidyverse
--   lubridate
--   readr
--   viridis
--   plotly
--   scales
--   ggplotlyExtra
--   rjson
--   moments
--   quantreg
--   caret
--   kableExtra
+* glue
+* dplyr
+* tidyverse
+* lubridate
+* readr
+* viridis
+* plotly
+* scales
+* ggplotlyExtra
+* rjson
+* moments
+* quantreg
+* caret
+* kableExtra
 
 I suggest running this code so that all your numbers are not in
 scientific notation:
@@ -28,7 +28,7 @@ coronavirus cases in the USA by county, which would be the equivalent of
 NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
 
-https://youtu.be/0x_pUErIU1E
+<iframe width="560" height="315" src="[https://www.youtube.com/embed/0x_pUErIU1E](https://www.youtube.com/embed/0x_pUErIU1E "Meditation video")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The second one has socio-economic and demographic data about the US by
 county which was taken from the [Center for Disease
@@ -44,8 +44,7 @@ Technology](https://scottontechnology.com/list-of-50-us-states-in-excel/).
 I cleaned as well as joined the second and third data sets in Excel into
 one.
 
-Introduction to R Markdown
-==========================
+# Introduction to R Markdown
 
 R markdown is a great tool that you can use to integrate many different
 characteristics of your analysis, such as interactive visualizations or
@@ -53,12 +52,12 @@ server-side interactions.
 
 These are just some of the things you can create with R markdown:
 
--   pdfs
--   docs
--   html
--   dashboards
--   presentations
--   websites
+* pdfs
+* docs
+* html
+* dashboards
+* presentations
+* websites
 
 Yes, that’s right - you can make presentations directly from R! This can
 be really helpful if you want to show code and output without having to
@@ -71,27 +70,26 @@ Quick LaTeX. The easiest way to understand LaTeX is that it enables you
 to write maths easily. For example:
 
 $$
-\\frac{x\_b}{x\_a}
+\\frac{x_b}{x_a}
 $$
 $$
-\\sum\_{j=0}^{i=0}{\\frac{z\_i^j}{i+100^i}}
+\\sum_{j=0}^{i=0}{\\frac{z_i^j}{i+100^i}}
 $$
 
 You can also render images but I’ll leave the explanation up to [the
 experts](http://www.holoborodko.com/pavel/quicklatex/). LaTeX rules are
 super easy to follow so don’t be afraid to try!
 
-Preparing the Data
-==================
+# Preparing the Data
 
 Before diving into any analysis, it is necessary to clean the data.
 While everyone has their own process, it is helpful for me when I
 already have an idea of what I want to do. I came up with three goals
 for this analysis:
 
-1.  Perform an exploratory analysis
-2.  Create interactive visualizations
-3.  Play with a couple of models for the data
+1. Perform an exploratory analysis
+2. Create interactive visualizations
+3. Play with a couple of models for the data
 
 In the NYT data set, there were a couple of geographical exceptions for
 which they did not use a traditional “fips” county codes - which are
@@ -101,8 +99,7 @@ itself. I instead chose to impute these numbers into a county that
 didn’t have any cases reported yet - Manhattan - in order to be able to
 visualize them using this geographical identifier (the fips).
 
-Exploratory Analysis
-====================
+# Exploratory Analysis
 
 In order to perform and EDA, I created a couple of tables that
 summarized characteristics of the coronavirus data set.
@@ -176,7 +173,7 @@ in that county or state
 </tr>
 <tr>
 <td style="text-align:left;">
-diabetes\_perc
+diabetes_perc
 </td>
 <td style="text-align:left;">
 Diagnosed Diabetes, Age-Adjusted Percentage, 20+, 2016
@@ -184,7 +181,7 @@ Diagnosed Diabetes, Age-Adjusted Percentage, 20+, 2016
 </tr>
 <tr>
 <td style="text-align:left;">
-nohsdip\_perc
+nohsdip_perc
 </td>
 <td style="text-align:left;">
 Percentage without High School Diploma, Ages 25+, 2013-2017 (5-year)
@@ -192,7 +189,7 @@ Percentage without High School Diploma, Ages 25+, 2013-2017 (5-year)
 </tr>
 <tr>
 <td style="text-align:left;">
-femalehd\_perc
+femalehd_perc
 </td>
 <td style="text-align:left;">
 Families with Female Head of Household (%), 2013-2017 (5-year)
@@ -200,7 +197,7 @@ Families with Female Head of Household (%), 2013-2017 (5-year)
 </tr>
 <tr>
 <td style="text-align:left;">
-foodstmp\_perc
+foodstmp_perc
 </td>
 <td style="text-align:left;">
 Percentage Food Stamp/Supplemental Nutrition Assistance Program
@@ -209,7 +206,7 @@ Recipients, 2016
 </tr>
 <tr>
 <td style="text-align:left;">
-med\_home\_val\_000s
+med_home_val_000s
 </td>
 <td style="text-align:left;">
 Median Home Value (in thousands of $), 2013-2017 (5-year)
@@ -217,7 +214,7 @@ Median Home Value (in thousands of $), 2013-2017 (5-year)
 </tr>
 <tr>
 <td style="text-align:left;">
-med\_hh\_inc\_000s
+med_hh_inc_000s
 </td>
 <td style="text-align:left;">
 Median Household Income (in thousands of $), 2017
@@ -233,7 +230,7 @@ Income Inequality (Gini Index), 2013-2017 (5-year)
 </tr>
 <tr>
 <td style="text-align:left;">
-perc\_poverty
+perc_poverty
 </td>
 <td style="text-align:left;">
 Percentage Living in Poverty, All Ages, 2017
@@ -241,7 +238,7 @@ Percentage Living in Poverty, All Ages, 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-unemp\_rt
+unemp_rt
 </td>
 <td style="text-align:left;">
 Unemployment Rate, Ages 16+, 2018
@@ -249,7 +246,7 @@ Unemployment Rate, Ages 16+, 2018
 </tr>
 <tr>
 <td style="text-align:left;">
-pop65up\_perc
+pop65up_perc
 </td>
 <td style="text-align:left;">
 Population Aged 65 and Older (%), 2013-2017 (5-year)
@@ -265,7 +262,7 @@ Annual Average Ambient Concentrations of PM2.5, 2015
 </tr>
 <tr>
 <td style="text-align:left;">
-perc\_sev\_housing
+perc_sev_housing
 </td>
 <td style="text-align:left;">
 Percentage of Households Living with Severe Housing Problems, 2010-2014
@@ -274,7 +271,7 @@ Percentage of Households Living with Severe Housing Problems, 2010-2014
 </tr>
 <tr>
 <td style="text-align:left;">
-urban\_rural
+urban_rural
 </td>
 <td style="text-align:left;">
 Urban-Rural Status, 2014
@@ -290,7 +287,7 @@ Number of Hospitals, 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-prim\_phys
+prim_phys
 </td>
 <td style="text-align:left;">
 Population per Primary Care Physician (in thousands), 2017
@@ -298,7 +295,7 @@ Population per Primary Care Physician (in thousands), 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-perc\_wo\_ins\_und65
+perc_wo_ins_und65
 </td>
 <td style="text-align:left;">
 Percentage without Health Insurance, Under Age 65, 2017
@@ -306,7 +303,7 @@ Percentage without Health Insurance, Under Age 65, 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-cost\_percap\_medicare\_hd
+cost_percap_medicare_hd
 </td>
 <td style="text-align:left;">
 Cost of Care per Capita for Medicare Beneficiaries Diagnosed with Heart
@@ -315,7 +312,7 @@ Disease, Total, 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-hd\_among\_ins\_perc
+hd_among_ins_perc
 </td>
 <td style="text-align:left;">
 Prevalence of Diagnosed Heart Disease Among Medicare Beneficiaries, 2017
@@ -323,7 +320,7 @@ Prevalence of Diagnosed Heart Disease Among Medicare Beneficiaries, 2017
 </tr>
 <tr>
 <td style="text-align:left;">
-cardio\_deathrt\_per\_hundthou\_ov35
+cardio_deathrt_per_hundthou_ov35
 </td>
 <td style="text-align:left;">
 Total Cardiovascular Disease Death Rate per 100,000, 35+, All
@@ -332,7 +329,7 @@ Races/Ethnicities, Both Genders, 2014-2017
 </tr>
 <tr>
 <td style="text-align:left;">
-hyperten\_deathrt\_perhundthou\_over35
+hyperten_deathrt_perhundthou_over35
 </td>
 <td style="text-align:left;">
 Hypertension Death Rate per 100,000 (any mention), 35+, All
@@ -870,8 +867,7 @@ New Jersey
 </tbody>
 </table>
 
-Creating Interactive Data Visualizations
-========================================
+# Creating Interactive Data Visualizations
 
 Based on both a lecture I had the other day on R, Python and Julia and
 reading things online, I have come to the conclusion that data
@@ -894,14 +890,13 @@ creativity.
 The disadvantage of using packages is that it will be subject to package
 updates or even packages becoming obsolete in the future.
 
-Creating Interactive Graphs
----------------------------
+## Creating Interactive Graphs
 
 To make the following interactive graphs and maps, I am using two
 packages:
 
--   ggplot2
--   plotly
+* ggplot2
+* plotly
 
 If you want to see some basic interactive charts, which where the
 inspiration for the following ones, check out R Graph Gallery’s section
