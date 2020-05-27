@@ -1,3 +1,6 @@
++++
+
++++
 For this project, I used the following packages:
 
 -   glue
@@ -24,6 +27,8 @@ For this project I used 4 data sets. The first one has details about
 coronavirus cases in the USA by county, which would be the equivalent of
 NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
+
+https://youtu.be/0x_pUErIU1E
 
 The second one has socio-economic and demographic data about the US by
 county which was taken from the [Center for Disease
