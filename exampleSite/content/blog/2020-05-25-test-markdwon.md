@@ -28,7 +28,11 @@ coronavirus cases in the USA by county, which would be the equivalent of
 NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/0x_pUErIU1E](https://www.youtube.com/embed/0x_pUErIU1E "Meditation video")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- iframe.snippet -->
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lUd9SQCkDj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 The second one has socio-economic and demographic data about the US by
 county which was taken from the [Center for Disease
