@@ -21,8 +21,7 @@ For this project, I used the following packages:
 * caret
 * kableExtra
 
-
-<iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+<iframe width="560" height="315" src="[https://www.youtube.com/embed/KDAznRsfPjo](https://www.youtube.com/embed/KDAznRsfPjo "https://www.youtube.com/embed/KDAznRsfPjo")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 I suggest running this code so that all your numbers are not in
 scientific notation:
