@@ -1,4 +1,7 @@
 +++
+date = 2020-05-31T22:00:00Z
+image = "/images/fusion-medical-animation-eaggqoiddmg-unsplash.jpg"
+title = "Test markdown site"
 
 +++
 For this project, I used the following packages:
@@ -29,10 +32,8 @@ NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
 
 
-<!-- iframe.snippet -->
-<div class="embed-responsive embed-responsive-16by9">
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lUd9SQCkDj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 The second one has socio-economic and demographic data about the US by
 county which was taken from the [Center for Disease
