@@ -21,6 +21,11 @@ For this project, I used the following packages:
 * caret
 * kableExtra
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
 I suggest running this code so that all your numbers are not in
 scientific notation:
 
@@ -30,12 +35,6 @@ For this project I used 4 data sets. The first one has details about
 coronavirus cases in the USA by county, which would be the equivalent of
 NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
-
-<iframe 
-
-width="560" height="315" src="https://www.youtube.com/embed/lUd9SQCkDj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-
-></iframe>
 
 The second one has socio-economic and demographic data about the US by
 county which was taken from the [Center for Disease
