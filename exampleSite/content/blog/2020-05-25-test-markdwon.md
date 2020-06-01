@@ -32,7 +32,6 @@ NUTS 3 regions. This comes from the [New York Times
 github](https://github.com/nytimes/covid-19-data)
 
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lUd9SQCkDj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The second one has socio-economic and demographic data about the US by
