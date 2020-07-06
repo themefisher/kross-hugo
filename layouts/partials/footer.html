@@ -38,16 +38,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
+          <h5 class="text-light">Location</h5>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.location}}</p>
+        </div>
+        <div class="col-md-4">
           <h5 class="text-light">Email</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.email}}</p>
         </div>
         <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.phone}}</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.address}}</p>
+          <h5 class="text-light">Connect</h5>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.connect | markdownify}}</p>
         </div>
       </div>
     </div>
