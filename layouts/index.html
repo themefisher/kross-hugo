@@ -180,6 +180,24 @@
   {{ end }}
   {{ end }}
 
+  {{ if .Site.Data.homepage.blog.enable }}
+  <!-- blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
+        </div>
+        {{ $item:= .Site.Data.homepage.blog.item_show }}
+        {{ range first $item .Site.RegularPages }}
+        {{ .Render "post" }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+  {{ end }}
+
 
   {{ if .Site.Data.homepage.portfolio.enable }}
   <!-- portfolio -->
@@ -199,7 +217,7 @@
             {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
+                <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view</a>
               </div>
             </div>
             {{ end }}
@@ -258,23 +276,5 @@
   </section>
   <!-- /client logo slider -->
   {{ end }}
-
-  {{ if .Site.Data.homepage.blog.enable }}
-  <!-- blog -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
-        </div>
-        {{ range first 3 .Site.RegularPages }}
-        {{ .Render "post" }}
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /blog -->
-  {{ end }}
-
 
 {{ end }}
