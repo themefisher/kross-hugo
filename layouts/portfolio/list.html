@@ -8,9 +8,6 @@
     <div class="row mb-5">
       <div class="col-12">
         <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
-          <label class="btn btn-sm btn-primary active">
-            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
-          </label>
 					{{ $categories := slice }}
 					{{ range .Site.Data.portfolio.item }}
 					{{ range .categories }}
@@ -33,7 +30,7 @@
           {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
+              <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view</a>
             </div>
           </div>
           {{ end }}
