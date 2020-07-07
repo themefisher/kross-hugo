@@ -4,48 +4,51 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: exampleSite/data/homepage.yml
-  label: Homepage
-  match: "**/*"
 - type: heading
   label: Blog Post
-- type: document
-  path: exampleSite/content/blog/_index.md
-  label: Blog Page
 - type: directory
-  path: exampleSite/content/blog
-  label: Blog Post
+  path: exampleSite/content/english/blog
+  label: Post (en)
   create: documents
-  match: "*"
-  exclude: _index.md
+  match: "**/*"
+  new_doc_ext: '20191203072044'
+  templates:
+  - post
+- type: directory
+  path: exampleSite/content/french/blog
+  label: Post (fr)
+  create: documents
+  match: "**/*"
   templates:
   - post
 - type: heading
-  label: Portfolio
-- type: document
-  path: exampleSite/content/portfolio/_index.md
-  label: Portfolio Page
-  match: "**/*"
-- type: document
-  path: exampleSite/data/portfolio.yml
-  label: Portfolio Items
-- type: heading
-  label: About
-- type: document
-  path: exampleSite/content/about/_index.md
-  label: About Page
-  match: "**/*"
-- type: document
-  path: exampleSite/data/about.yml
-  label: About Data
-- type: heading
-  label: Others Page
+  label: Author
 - type: directory
-  path: exampleSite/content/contact
-  label: Contact
-  create: none
-  match: "*"
+  path: exampleSite/content/english/author
+  label: Author (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: directory
+  path: exampleSite/content/french/author
+  label: Author (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: heading
+  label: Data
+- type: directory
+  path: exampleSite/data
+  label: Homepage
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/i18n
+  label: i18n
+  create: documents
+  match: "**/*"
 - type: heading
   label: Configuration
 - type: directory
@@ -69,4 +72,4 @@ build:
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public
-version: 0.69.0
+version: 0.58.2
