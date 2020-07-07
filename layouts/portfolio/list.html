@@ -12,8 +12,8 @@
             <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
           </label>
 					{{ $categories := slice }}
-					{{ range .Site.Data.portfolio.item }}
-					{{ range .categories }}
+					{{ range .Data.Pages }}
+					{{ range .Params.categories }}
 					{{ $categories = $categories | append . }}
 					{{ end }}
 					{{ end }}
@@ -26,17 +26,15 @@
       </div>
     </div>
     <div class="row shuffle-wrapper">
-      {{ range .Site.Data.portfolio.item }}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+      {{ range .Data.Pages }}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
         <div class="position-relative rounded hover-wrapper">
-          <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
+          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
+              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">view project</a>
             </div>
           </div>
-          {{ end }}
         </div>
       </div>
       {{ end }}
@@ -45,19 +43,10 @@
 </section>
 <!-- /portfolio -->
 
-{{ if .Site.Data.portfolio.clients_logo_slider.enable }}
 <section class="section bg-light">
   <div class="container">
-    {{ with .Site.Data.portfolio.clients_logo_slider.title}}
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ . | markdownify }}</h2>
-      </div>
-    </div>
-    {{ end }}
     {{ partial "client-slider.html" . }}
   </div>
 </section>
-{{ end }}
 
 {{ end }}

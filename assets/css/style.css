@@ -331,6 +331,10 @@ a:hover {
   overflow: hidden
 }
 
+.font-primary {
+  font-family: roboto, serif !important
+}
+
 .font-secondary {
   font-family: playfair display, serif !important
 }
@@ -870,4 +874,17 @@ blockquote {
 
 .filter-controls li.active {
   font-weight: 700
+}
+
+.social-icons a{
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  display: block;
+  box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 <div class="client-logo-slider d-flex align-items-center">
-  {{ range .Site.Data.homepage.clients_logo_slider.item }}
+  {{ range site.Data.homepage.clients_logo_slider.item }}
   {{ if and ( ne .URL "" ) ( ne .URL "#" ) }}
   <a href="{{ .URL | safeURL }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></a>
   {{ else }}

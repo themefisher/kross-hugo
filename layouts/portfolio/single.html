@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-5 col-md-6 mb-5">
+        <img src="{{ .Params.image | absURL }}" class="img-fluid w-100" alt="{{ .Title }}">
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5">
+        <div class="card shadow">
+          <div class="card-body">
+            <h1 class="h3 mb-5">{{.Title}}</h1>
+            <div class="mb-4">
+              <h4>Date:</h4>
+              <strong>{{ .PublishDate.Format "Jan 02, 2006" }}</strong>
+            </div>
+            {{ with .Params.Client}}
+            <div class="mb-4">
+              <h4>Client:</h4>
+              <strong>{{. | markdownify}}</strong>
+            </div>
+            {{ end }}
+            <div class="mb-4">
+              <h4>Categories:</h4>
+              <strong>{{ delimit .Params.categories ", " | humanize }}</strong>
+            </div>
+            {{ with .Params.project_url}}
+            <div class="mb-4">
+              <h4>Project Link:</h4>
+              <strong>{{. | markdownify}}</strong>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-11">
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+
+{{ end }}

@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+          <h1 class="text-white font-tertiary">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
     </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range .Site.Params.social }}
+      {{ range site.Params.social }}
       <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
     </ul>
@@ -46,13 +46,13 @@
   </section>
   <!-- /hero area -->
 
-  {{ if .Site.Data.homepage.about.enable }}
+  {{ if site.Data.homepage.about.enable }}
   <!-- about -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
-          {{ with .Site.Data.homepage.about }}
+          {{ with site.Data.homepage.about }}
           <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -68,8 +68,8 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.skill.enable }}
-  {{ with .Site.Data.homepage.skill }}
+  {{ if site.Data.homepage.skill.enable }}
+  {{ with site.Data.homepage.skill }}
   <!-- skills -->
   <section class="section">
     <div class="container">
@@ -96,8 +96,8 @@
   {{ end }}
   {{ end }}
 
-  {{ if .Site.Data.homepage.experience.enable }}
-  {{ with .Site.Data.homepage.experience }}
+  {{ if site.Data.homepage.experience.enable }}
+  {{ with site.Data.homepage.experience }}
   <!-- experience -->
   <section class="section">
     <div class="container">
@@ -120,8 +120,8 @@
   {{ end }}
   {{ end }}
 
-  {{ if .Site.Data.homepage.education.enable }}
-  {{ with .Site.Data.homepage.education }}
+  {{ if site.Data.homepage.education.enable }}
+  {{ with site.Data.homepage.education }}
   <!-- education -->
   <section class="section position-relative">
     <div class="container">
@@ -153,8 +153,8 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.service.enable }}
-  {{ with .Site.Data.homepage.service }}
+  {{ if site.Data.homepage.service.enable }}
+  {{ with site.Data.homepage.service }}
   <!-- services -->
   <section class="section">
     <div class="container">
@@ -181,28 +181,26 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.portfolio.enable }}
+  {{ if site.Data.homepage.portfolio.enable }}
   <!-- portfolio -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ .Site.Data.homepage.portfolio.title | markdownify }}</h2>
+          <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
-        {{ $item:= .Site.Data.homepage.portfolio.item_show }}
-        {{ range first $item .Site.Data.portfolio.item }}
+        {{ $item:= site.Data.homepage.portfolio.item_show }}
+        {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
-            <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
+            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
+                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
               </div>
             </div>
-            {{ end }}
           </div>
         </div>
         {{ end }}
@@ -213,8 +211,8 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.testimonial.enable }}
-  {{ with .Site.Data.homepage.testimonial }}
+  {{ if site.Data.homepage.testimonial.enable }}
+  {{ with site.Data.homepage.testimonial }}
   <!-- testimonial -->
   <section class="section bg-primary position-relative testimonial-bg-shapes">
     <div class="container">
@@ -249,7 +247,7 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.clients_logo_slider.enable }}
+  {{ if site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->
   <section class="section pb-0">
     <div class="container">
@@ -259,15 +257,15 @@
   <!-- /client logo slider -->
   {{ end }}
 
-  {{ if .Site.Data.homepage.blog.enable }}
+  {{ if site.Data.homepage.blog.enable }}
   <!-- blog -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
+          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
         </div>
-        {{ range first 3 .Site.RegularPages }}
+        {{ range first 3 site.RegularPages }}
         {{ .Render "post" }}
         {{ end }}
       </div>

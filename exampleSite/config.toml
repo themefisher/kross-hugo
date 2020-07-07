@@ -3,26 +3,28 @@ baseURL = "http://examplesite.com"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross | Hugo Portfolio Template"
+title = "Kross"
 
 # css plugins
 [[params.plugins.css]]
-URL = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-URL = "plugins/slick/slick.css"
+link = "plugins/slick/slick.css"
 [[params.plugins.css]]
-URL = "plugins/themify-icons/themify-icons.css"
+link = "plugins/themify-icons/themify-icons.css"
 
 
 # js plugin
 [[params.plugins.js]]
-URL = "plugins/jQuery/jquery.min.js"
+link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
-URL = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-URL = "plugins/slick/slick.min.js"
+link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
-URL = "plugins/shuffle/shuffle.min.js"
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/map.js"
 
 
 # menu
@@ -50,7 +52,7 @@ weight = 4
 # default parameters
 [params]
 home = "Home"
-logo = "images/logo.png"
+logo = ""
 # theme color
 theme_color = "#41228e"
 # contact info
@@ -66,15 +68,23 @@ google_analytics_id = "" # Your ID
 copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 
 
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
 # contact
 [params.contact]
 enable = true
 form_action = "#" # contact form works with : https://formspree.io
 
-# preloader
-[params.preloader]
+# google map
+[params.map]
 enable = true
-preloader = "" # use png, jpg, svg or gif format
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=en"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
 
 # social site
 [[params.social]]
