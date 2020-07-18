@@ -5,35 +5,52 @@
 <!-- portfolio -->
 <section class="section">
   <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-5 col-md-6 mb-5">
+    <div class="row">
+      <div class="col-lg-5 mb-5">
         <img src="{{ .Params.image | absURL }}" class="img-fluid w-100" alt="{{ .Title }}">
       </div>
-      <div class="col-lg-5 col-md-6 mb-5">
-        <div class="card shadow">
-          <div class="card-body">
-            <h1 class="h3 mb-5">{{.Title}}</h1>
-            <div class="mb-4">
-              <h4>Date:</h4>
-              <strong>{{ .PublishDate.Format "Jan 02, 2006" }}</strong>
+      <div class="col-lg-7 mb-5 mb-lg-0 align-self-center">
+        <div class="row mx-0">
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-calendar"></i>
+              <div class="ml-3">
+                <h4>Date</h4>
+                <p>{{ .PublishDate.Format "Jan 02, 2006" }}</p>
+              </div>
             </div>
-            {{ with .Params.Client}}
-            <div class="mb-4">
-              <h4>Client:</h4>
-              <strong>{{. | markdownify}}</strong>
-            </div>
-            {{ end }}
-            <div class="mb-4">
-              <h4>Categories:</h4>
-              <strong>{{ delimit .Params.categories ", " | humanize }}</strong>
-            </div>
-            {{ with .Params.project_url}}
-            <div class="mb-4">
-              <h4>Project Link:</h4>
-              <strong>{{. | markdownify}}</strong>
-            </div>
-            {{ end }}
           </div>
+          {{ with .Params.Client}}
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-user"></i>
+              <div class="ml-3">
+                <h4>Client</h4>
+                <p>{{. | markdownify}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-folder"></i>
+              <div class="ml-3">
+                <h4>Categories</h4>
+                <p>{{ delimit .Params.categories ", " | humanize }}</p>
+              </div>
+            </div>
+          </div>
+          {{ with .Params.project_url}}
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-link"></i>
+              <div class="ml-3">
+                <h4>Project Link</h4>
+                <p>{{. | markdownify}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
         </div>
       </div>
       <div class="col-lg-11">
