@@ -265,7 +265,7 @@
         <div class="col-12 text-center">
           <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
         </div>
-        {{ range first 3 site.RegularPages }}
+        {{ range first 3 (where .Site.RegularPages "Section" "blog")}}
         {{ .Render "post" }}
         {{ end }}
       </div>
