@@ -66,6 +66,7 @@ $ git clone git@github.com:themefisher/kross-hugo.git
 $ cd kross-hugo/exampleSite/
 $ hugo server --themesDir ../..
 ```
+Or Check out [Full Documentation](https://docs.gethugothemes.com/kross/?ref=github).
 
 
 ## Reporting Issues
@@ -79,21 +80,12 @@ If you have questions or need help integrating the product please [contact us](m
 
 ## Licensing
 
-- Copyright 2020 Designed by [Themefisher](https://themefisher.com/) & Developed by [Gethugothemes](https://gethugothemes.com/)
-- Licensed under MIT (https://github.com/themefisher/kross-hugo/blob/master/LICENSE)
+Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
 
-### Donate Us (Author) 
-This project needs you! If you would like to support this project's further development, the creator of this project or the continuous maintenance of this project, feel free to donate. Your donation is highly appreciated . Thank you!
+**Code License:** Released under the [MIT](https://github.com/themefisher/kross-hugo/blob/master/LICENSE) license.
 
-* **[Donate $10](https://www.paypal.me/themefisher/10USD)**: Thank's for creating this project, here's a tea (or some juice) for you!
-* **[Donate $20](https://www.paypal.me/themefisher/20USD)**: Wow, I am stunned. Let me take you to the movies!
-* **[Donate $30](https://www.paypal.me/themefisher/30USD)**: I really appreciate your work, let's grab some lunch!
-* **[Donate $40](https://www.paypal.me/themefisher/40USD)**: That's some awesome stuff you did right there, dinner is on me!
-* **[Donate $50](https://www.paypal.me/themefisher/50USD)**: I really really want to support this project, great job!
-* **[Donate $100](https://www.paypal.me/themefisher/100USD)**: You are the man! This project saved me hours (if not days) of struggle and hard work, simply awesome!
-* **[Donate $1500](https://www.paypal.me/themefisher/1500USD)**: Go buddy, buy Macbook Pro for yourself!
+**Image license:** The images are only for demonstration purposes. They have their own licence, we don't have permission to share those image.
 
-Of course, you can also choose what you want to donate, all donations are awesome !
 
 
 ## Premium Themes
@@ -101,7 +93,3 @@ Of course, you can also choose what you want to donate, all donations are awesom
 | [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![Phantop](https://gethugothemes.com/wp-content/uploads/edd/2019/06/Phantom.jpg)](https://gethugothemes.com/products/phantom-hugo-theme/) | [![redlab](https://gethugothemes.com/wp-content/uploads/edd/2019/09/redlab-hugo-thumbnail.jpg)](https://gethugothemes.com/products/redlab-hugo/) |
 |:---:|:---:|:---:|
 | **Hugo Mega Bundle**  | **Phantom**  | **Red Lab**  |
-| [![northendlab](https://gethugothemes.com/wp-content/uploads/2019/11/Blogplate-Blog-Template.png)](https://gethugothemes.com/products/northendlab/) | [![Influencer](https://gethugothemes.com/wp-content/uploads/2019/11/Influencer.png)](https://gethugothemes.com/products/influencer-hugo/) | [![Vex](https://gethugothemes.com/wp-content/uploads/edd/2019/07/Vex.jpg)](https://gethugothemes.com/products/vex-hugo-theme/) |
-| **Northendlab** | **Influencer** | **Vex** |
-| [![Timer](https://gethugothemes.com/wp-content/uploads/edd/2019/07/Timer.jpg)](https://gethugothemes.com/products/timer-hugo-theme/) | [![Parsa](https://gethugothemes.com/wp-content/uploads/edd/2019/07/parsa-768x576.jpg)](https://gethugothemes.com/products/parsa-hugo-theme/) | [![all](https://gethugothemes.com/wp-content/uploads/2019/12/get-more-hugo-themes.png)](https://gethugothemes.com/shop/) |
-| **Timer** | **Parsa** | **More Hugo Themes** |
