@@ -475,62 +475,6 @@ textarea.form-control {
   z-index: 2
 }
 
-.layer {
-  position: absolute;
-  z-index: 1
-}
-
-#l1 {
-  bottom: 0;
-  left: 0
-}
-
-#l2 {
-  top: 190px;
-  left: -250px
-}
-
-#l3 {
-  top: 200px;
-  left: 40%
-}
-
-#l4 {
-  top: 200px;
-  right: 40%
-}
-
-#l5 {
-  top: 100px;
-  right: -150px
-}
-
-#l6 {
-  bottom: -20px;
-  left: 10%
-}
-
-#l7 {
-  bottom: 100px;
-  left: 20%
-}
-
-#l8 {
-  bottom: 160px;
-  right: 45%
-}
-
-#l9 {
-  bottom: 100px;
-  right: -10px
-}
-
-.layer-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0
-}
-
 .progress-wrapper {
   height: 130px;
   overflow: hidden
