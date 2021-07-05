@@ -39,11 +39,11 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.email}}</p>
+          <p class="text-white paragraph-lg font-secondary"><a href="mailto:{{site.Params.email}}">{{site.Params.email}}</a></p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.phone}}</p>
+          <p class="text-white paragraph-lg font-secondary"><a href="tel:{{site.Params.phone}}">{{site.Params.phone}}</a></p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="border-top text-center border-dark py-5">
+  <div class="footer-bottom border-top text-center border-dark py-5">
     <p class="mb-0 text-light">{{ site.Params.copyright | markdownify }}</p>
   </div>
 </footer>

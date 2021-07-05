@@ -702,6 +702,20 @@ textarea.form-control {
   padding-top: 200px
 }
 
+.footer-section a {
+  color: #fff;
+}
+
+.footer-bottom a {
+  color: #999;
+  text-decoration: underline;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .section-on-footer {
   margin-bottom: -250px
 }
@@ -879,7 +893,7 @@ blockquote {
 .social-icons a{
   height: 100px;
   width: 100px;
-  line-height: 100px;
+  line-height: 102px;
   border-radius: 50%;
   display: block;
   box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
