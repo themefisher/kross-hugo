@@ -49,7 +49,7 @@ Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) 
 
 **The images are only for demonstration purpose, Please don't use those images.**
 
-[Live Preview](http://demo.themefisher.com/kross-hugo/).
+[Live Preview](http://demo.gethugothemes.com/kross/).
 
 ## Quick Start
 Quick start options:
