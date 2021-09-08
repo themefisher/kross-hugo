@@ -1,4 +1,4 @@
-<h1 align=center>Kross Hugo | <a target="_blank" href="https://demo.gethugothemes.com/kross" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fkross%2F">Page Speed (82%)</a></h1>
+<h1 align=center>Kross Hugo | <a target="_blank" href="https://demo.gethugothemes.com/kross" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fkross%2F">Page Speed (81%)</a></h1>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -34,7 +34,7 @@
 - Contact form Support
 - GDPR consent enable
 - Google map support 
-- Google page speed optimized ( 82% )
+- Google page speed optimized ( 81% )
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -114,7 +114,7 @@ share those images.
 
 ## Hire Us
 We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://cutt.ly/ght-service)
+[services](https://gethugothemes.com/services/?ref=github)
 
 <!-- premium themes -->
 ## Premium Themes By Us
