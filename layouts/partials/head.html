@@ -8,6 +8,11 @@
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
+  {{ with site.Params.baidu_site_verification }}
+	{{ "<!-- baidu site verification -->" | safeHTML }}
+  <meta name="baidu-site-verification" content="{{ . }}" />
+  {{ end }}
+
   <style>
     :root{
       --primary-color:{{ site.Params.theme_color }};
@@ -37,6 +42,19 @@
 
 	  gtag('config', '{{ . }}');
 	</script>
+	{{ end }}
+
+  {{ with site.Params.baidu_analytics_id }}
+	{{ "<!--  Baidu analytics -->" | safeHTML }}
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?{{ . }}";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 	{{ end }}
 
 </head>
