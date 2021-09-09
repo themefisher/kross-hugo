@@ -8,6 +8,11 @@
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
+  {{ with site.Params.baidu_site_verification }}
+	{{ "<!-- baidu site verification -->" | safeHTML }}
+  <meta name="baidu-site-verification" content="{{ . }}" />
+  {{ end }}
+
   <style>
     :root{
       --primary-color:{{ site.Params.theme_color }};

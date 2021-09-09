@@ -64,6 +64,8 @@ author = "Johnathan Smith"
 description = "This is meta description"
 # google analytics
 google_analytics_id = "" # Your ID
+# baidu site verification
+baidu_site_verification = "" Your verification code
 # copyright
 copyright = "Copyright &copy; 2021 a Theme by [Gethugothemes](https://gethugothemes.com)"
 
