@@ -65,9 +65,9 @@ description = "This is meta description"
 # google analytics
 google_analytics_id = "" # Your ID
 # baidu site verification
-baidu_site_verification = "" Your verification code
+baidu_site_verification = "" #Your verification code
 # baidu analytics
-baidu_analytics_id = "" Your ID
+baidu_analytics_id = "" #Your ID
 # copyright
 copyright = "Copyright &copy; 2021 a Theme by [Gethugothemes](https://gethugothemes.com)"
 
