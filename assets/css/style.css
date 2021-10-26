@@ -333,8 +333,8 @@ a:hover {
   font-family: playfair display, serif !important
 }
 
-.font-tertiary {
-  font-family:Playfair Displayo, sans-serif;
+.font-secondary {
+  font-family: Playfair Display, sans-serif;
   font-weight: 700 !important;
 }
 
@@ -440,8 +440,8 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family:Playfair Displayo, sans-serif;
-  font-wight: 700;;;
+  font-family: Playfair Display, sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 15px
 }
