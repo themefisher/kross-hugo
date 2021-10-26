@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://examplesite.com"
+baseURL = "http://demo.gethugothemes.com/kross/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
