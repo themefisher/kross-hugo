@@ -3,14 +3,7 @@
 PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
-
-@font-face {
-  font-family: bwnistaint-xbd;
-  src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
-  font-style: normal;
-  font-display: swap
-}
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400";
 
 body {
   line-height: 1.2;
@@ -223,7 +216,8 @@ a:hover {
 
 .section-title {
   margin-bottom: 80px;
-  font-family: bwnistaint-xbd
+  font-family: Playfair Display, sans-serif;
+  font-weight: 700;
 }
 
 .bg-cover {
@@ -340,7 +334,8 @@ a:hover {
 }
 
 .font-tertiary {
-  font-family: bwnistaint-xbd !important
+  font-family:Playfair Displayo, sans-serif;
+  font-weight: 700 !important;
 }
 
 .shadow {
@@ -445,7 +440,8 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: bwnistaint-xbd;
+  font-family:Playfair Displayo, sans-serif;
+  font-wight: 700;;;
   text-transform: uppercase;
   padding: 15px
 }
