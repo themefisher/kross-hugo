@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://demo.gethugothemes.com/kross/"
+baseURL = "https://demo.gethugothemes.com/kross/examplesite/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
@@ -29,22 +29,22 @@ link = "plugins/google-map/map.js"
 
 # menu
 [[menu.main]]
-URL = "about"
+URL = "about/"
 name = "About"
 weight = 1
 
 [[menu.main]]
-URL = "blog"
+URL = "blog/"
 name = "Blog"
 weight = 2
 
 [[menu.main]]
-URL = "portfolio"
+URL = "portfolio/"
 name = "Portfolio"
 weight = 3
 
 [[menu.main]]
-URL = "contact"
+URL = "contact/"
 name = "Contact"
 weight = 4
 
