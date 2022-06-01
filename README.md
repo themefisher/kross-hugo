@@ -112,11 +112,13 @@ share those images.
 
 
 ## Hire Us
-We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://gethugothemes.com/services/?ref=github)
+Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo. 
+
+If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our 
+[services](https://gethugothemes.com/services/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Reader](https://demo.gethugothemes.com/thumbnails/reader.webp)](https://gethugothemes.com/products/reader/) | [![thomson](https://demo.gethugothemes.com/thumbnails/thomson.webp)](https://gethugothemes.com/products/thomson/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Reader](https://demo.gethugothemes.com/thumbnails/reader.webp)](https://gethugothemes.com/products/reader/) | [![thomson](https://demo.gethugothemes.com/thumbnails/thomson.webp)](https://gethugothemes.com/products/thomson/) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Reader** | **Thomson** |
+| **Get 50+ Premium Hugo Themes Bundle** | **Reader** | **Thomson** |
