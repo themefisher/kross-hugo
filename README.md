@@ -21,22 +21,23 @@
 ---
 
 <p align="center">
-  <img src="https://demo.gethugothemes.com/thumbnails/kross.webp" alt="screenshot" width="100%">
+  <img src="https://demo.gethugothemes.com/thumbnails/kross.png" alt="screenshot" width="100%">
 </p>
 
 ---
+
 ## Features
+
 - Google analytics  support
 - CSS and JS bundle with hugo pipe
 - Netlify settings predefine
 - Forestry cms pre-configured
 - Contact form Support
 - GDPR consent enable
-- Google map support 
+- Google map support
 - Google page speed optimized ( 81% )
 - Open graph meta tag
 - Twitter card meta tag
-
 
 ## Local development
 
@@ -50,6 +51,7 @@ $ cd kross-hugo/exampleSite/
 # Start local dev server
 $ hugo server --themesDir ../..
 ```
+
 Or Check out [Full Documentation](https://docs.gethugothemes.com/kross/?ref=github).
 
 ## Content Management System
@@ -62,6 +64,7 @@ repository in Forestry](https://app.forestry.io/quick-start?repo=themefisher/kro
 you will be able to edit and preview your site ✨.
 
 Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
+
 ## Deployment and hosting
 
 [![Deploy to
@@ -70,28 +73,31 @@ Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com
 Follow the steps.
 
 ## Prefer a video? (Hugo + Netlify + Forestry)
+
 Build your website with **Kross Hugo** theme by following these easy steps (No Coding Required!)
 [Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
 ## Reporting Issues
+
 We use GitHub Issues as the official bug tracker for the kross Template. Please Search [existing
 issues](https://github.com/themefisher/kross-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/kross-hugo/issues).
 
 ## Kross Hugo Powered Websites
-- https://adwinronaldross.com/
-- https://alessandropomponio.me/
-- https://www.yogagardenoregon.com/
-- https://www.bryture.com/
-- https://www.olenaspektor.com/
 
+- <https://adwinronaldross.com/>
+- <https://alessandropomponio.me/>
+- <https://www.yogagardenoregon.com/>
+- <https://www.bryture.com/>
+- <https://www.olenaspektor.com/>
 
 View all the websites powered by Kross Hugo [here](https://github.com/themefisher/kross-hugo/wiki/Popular-sites-powered-by-Kross-Hugo). Want to submit your own website powered by Kross Hugo? You can submit it [here](https://github.com/themefisher/kross-hugo/discussions/44).
 
 <!-- licence -->
 ## License
+
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
 
@@ -102,6 +108,7 @@ share those images.
 
 <!-- resources -->
 ## Special Thanks
+
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
 - [Themify Icons](https://themify.me/themify-icons)
@@ -110,15 +117,16 @@ share those images.
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/kross-hugo/graphs/contributors)
 
-
 ## Hire Us
-Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo. 
 
-If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our 
+Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
+
+If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
 [services](https://gethugothemes.com/services/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Reader](https://demo.gethugothemes.com/thumbnails/reader.webp)](https://gethugothemes.com/products/reader/) | [![thomson](https://demo.gethugothemes.com/thumbnails/thomson.webp)](https://gethugothemes.com/products/thomson/) |
+
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Reader](https://demo.gethugothemes.com/thumbnails/reader.png)](https://gethugothemes.com/products/reader/) | [![thomson](https://demo.gethugothemes.com/thumbnails/thomson.png)](https://gethugothemes.com/products/thomson/) |
 |:---:|:---:|:---:|
 | **Get 50+ Premium Hugo Themes Bundle** | **Reader** | **Thomson** |
