@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <!-- theme meta -->
+  <meta name="theme-name" content="kross-hugo" />
   {{ hugo.Generator }}
 
   {{ with site.Params.baidu_site_verification }}
