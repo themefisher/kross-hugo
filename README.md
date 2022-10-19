@@ -38,7 +38,7 @@
 - Contact form Support
 - GDPR consent enable
 - Google map support
-- Google page speed optimized ( 81% )
+- Google page speed optimized ( 91% )
 - Open graph meta tag
 - Twitter card meta tag
 
