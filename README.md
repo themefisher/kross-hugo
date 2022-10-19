@@ -1,4 +1,7 @@
-<h1 align=center>Kross Hugo | <a target="_blank" href="https://demo.gethugothemes.com/kross" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fkross%2F">Page Speed (81%)</a></h1>
+<h1 align=center>Kross Hugo </h1>
+<p align=center>Kross is a user-friendly, clean and modern personal website theme with an elegant appearance. </p>
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/kross" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fkross%2Fsite%2F&form_factor=desktop">Page Speed (91%)</a></h2>
+
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -26,7 +29,7 @@
 
 ---
 
-## Features
+## Key Features
 
 - Google analytics  support
 - CSS and JS bundle with hugo pipe
@@ -87,13 +90,19 @@ issue](https://github.com/themefisher/kross-hugo/issues).
 
 ## Kross Hugo Powered Websites
 
+- <https://plexiti.com/>
 - <https://adwinronaldross.com/>
+- <https://gertjaap.org/>
+- <https://njcustomoutfitters.com/>
+- <https://www.madeleinesmith.uk/>
+- <https://howdyheyharold.page/>
 - <https://alessandropomponio.me/>
 - <https://www.yogagardenoregon.com/>
 - <https://www.bryture.com/>
 - <https://www.olenaspektor.com/>
 
-View all the websites powered by Kross Hugo [here](https://github.com/themefisher/kross-hugo/wiki/Popular-sites-powered-by-Kross-Hugo). Want to submit your own website powered by Kross Hugo? You can submit it [here](https://github.com/themefisher/kross-hugo/discussions/44).
+
+View all the websites powered by Kross Hugo [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Kross Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
@@ -129,4 +138,4 @@ If you need to customize the theme or complete website development from scratch,
 
 | [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=kross_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Reader](https://demo.gethugothemes.com/thumbnails/reader.png)](https://gethugothemes.com/products/reader/) | [![thomson](https://demo.gethugothemes.com/thumbnails/thomson.png)](https://gethugothemes.com/products/thomson/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle** | **Reader** | **Thomson** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Reader** | **Thomson** |
