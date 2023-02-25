@@ -1,10 +1,3 @@
-# default configuration
-baseURL = "https://demo.gethugothemes.com/kross/examplesite/"
-languageCode = "en-us"
-summaryLength = "10"
-theme = "kross-hugo"
-title = "Kross"
-
 # css plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
@@ -25,29 +18,6 @@ link = "plugins/slick/slick.min.js"
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
-
-
-# menu
-[[menu.main]]
-URL = "about/"
-name = "About"
-weight = 1
-
-[[menu.main]]
-URL = "blog/"
-name = "Blog"
-weight = 2
-
-[[menu.main]]
-URL = "portfolio/"
-name = "Portfolio"
-weight = 3
-
-[[menu.main]]
-URL = "contact/"
-name = "Contact"
-weight = 4
-
 
 # default parameters
 [params]
@@ -81,33 +51,3 @@ preloader = "images/preloader.gif" # use png, jpg, svg or gif format
 [params.contact]
 enable = true
 form_action = "#" # contact form works with : https://formspree.io
-
-# google map
-[params.map]
-enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=en"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
-
-# cookies
-[params.cookies]
-enable = true
-expire_days = 2
-
-# social site
-[[params.social]]
-icon = "ti-facebook"
-URL = "#"
-
-[[params.social]]
-icon = "ti-instagram"
-URL = "#"
-
-[[params.social]]
-icon = "ti-dribbble"
-URL = "#"
-
-[[params.social]]
-icon = "ti-twitter-alt"
-URL = "#"
