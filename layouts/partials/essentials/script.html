@@ -1,0 +1,43 @@
+<!-- Bootstrap scripts -->
+{{ $bootstrap := resources.Get "js/bootstrap.js" }}
+{{ $params := dict }}
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "target" "es2018" "params" $params }}
+{{ $bootstrap = $bootstrap | js.Build $opts }}
+{{ if hugo.IsProduction }}
+  {{ $bootstrap = $bootstrap | fingerprint "sha512" }}
+{{ end }}
+<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $bootstrap.Data.Integrity }}"{{end}} type="application/javascript">{{$bootstrap.Content | safeJS}}</script>
+
+<!-- JS Plugins + Main script -->
+{{ $scripts := slice }}
+{{ range site.Params.plugins.js }}
+  {{ if findRE "^http" .link }}
+    <script
+      src="{{ .link | relURL }}"
+      type="application/javascript"
+      {{ .attributes | safeHTMLAttr }}></script>
+  {{ else }}
+    {{ $scripts = $scripts | append (resources.Get .link) }}
+  {{ end }}
+{{ end }}
+
+
+<!-- main script -->
+{{ $scripts = $scripts | append (resources.Get "js/script.js") }}
+{{ $scripts = $scripts | resources.Concat "js/scripts.js" }}
+{{ if hugo.IsProduction }}
+  {{ $scripts = $scripts | fingerprint "sha512" }}
+{{ end }}
+<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{end}} type="application/javascript">{{$scripts.Content | safeJS}}</script>
+
+<!-- progressive web app -->
+{{ partialCached "pwa.html" . }}
+
+
+<!-- cookie consent -->
+{{ partialCached "cookie-consent.html" . }}
+
+
+<!-- google adsense -->
+{{ partialCached "adsense-script.html" . }}

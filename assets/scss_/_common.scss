@@ -1,0 +1,287 @@
+body {
+  background-color: $body-bg;
+  overflow-x: hidden;
+}
+
+.preloader {
+  background-color: $body-bg;
+}
+
+::selection {
+  background: lighten($color: $color-primary, $amount: 10);
+  color: $white;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+a:hover {
+  color: $color-primary;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &-sm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-default {
+  border-color: $border-color !important;
+}
+
+/* overlay */
+
+.overlay {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: 0.5;
+  }
+}
+
+.outline-0 {
+  outline: 0 !important;
+}
+
+.bg-primary {
+  background: $color-primary !important;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-default {
+  color: $text-color !important;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.lazy {
+  transition: background-image 0.3s ease;
+}
+
+// content style
+.content {
+  // image
+
+  a {
+    color: $text-dark;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+
+    li {
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 0.5rem;
+        width: 0.5rem;
+        border-radius: 50%;
+        background: $color-primary;
+        left: 3px;
+        top: 0.5rem;
+      }
+    }
+  }
+
+  // table
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid $border-color;
+  }
+
+  table td,
+  table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  thead {
+    background: $light;
+    margin-bottom: 0;
+
+    tr {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  tbody {
+    background: lighten($color: $light, $amount: 5);
+    margin-bottom: 0;
+  }
+
+  // collapse / accordion
+  .accordion {
+    &-item {
+      border: 0;
+    }
+    &-button {
+      padding: 0.7rem 1.25rem;
+      color: $text-dark;
+      background-color: $light;
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 fill=%22%23000000%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 4.646a.5.5.0 01.708.0L8 10.293l5.646-5.647a.5.5.0 01.708.708l-6 6a.5.5.0 01-.708.0l-6-6a.5.5.0 010-.708z%22/%3E%3C/svg%3E");
+      }
+
+      &:focus {
+        border-color: inherit;
+        box-shadow: none;
+      }
+
+      &:not(.collapsed) {
+        color: $text-dark;
+        box-shadow: none;
+      }
+    }
+  }
+
+  // blockquote
+  blockquote {
+    font-size: 1.5rem !important;
+    color: $text-color;
+    padding: 1.5rem 3.5rem;
+    border-left: 2px solid $color-primary;
+    margin: 3.5rem 0;
+    font-weight: bold;
+    background: $light;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  //code
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0.7rem 0;
+    white-space: pre-wrap;
+  }
+
+  code {
+    margin-bottom: 0 !important;
+    font-size: 100%;
+  }
+}
+
+// pagination
+.pagination {
+  justify-content: center;
+  padding: 30px 0;
+  margin-bottom: 0;
+
+  .page-item {
+    .page-link {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      border-radius: 0;
+      border: 1px solid $border-color;
+      text-align: center;
+      margin: 0 4px;
+      font-weight: 500;
+      color: $dark;
+      padding: 0;
+      line-height: 41px;
+      box-shadow: 0 5px 25px rgba($black, 0.05);
+
+      &:focus,
+      &:hover {
+        box-shadow: none;
+        background: $color-primary;
+        color: $white;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        border-radius: 0;
+      }
+    }
+
+    &.active {
+      .page-link {
+        background: $color-primary;
+        color: $white;
+        border-color: $color-primary;
+      }
+    }
+  }
+}

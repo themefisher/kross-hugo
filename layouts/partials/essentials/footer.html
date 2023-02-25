@@ -1,0 +1,65 @@
+<!-- contact -->
+<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary"><a
+              href="mailto:{{site.Params.contact_info.email}}">{{site.Params.contact_info.email}}</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary"><a
+              href="tel:{{site.Params.contact_info.mobile}}">{{site.Params.contact_info.mobile}}</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">{{site.Params.contact_info.address}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom border-top text-center border-dark py-5">
+    <p>
+      {{ site.Params.copyright | markdownify }}
+      {{ if site.Params.theme_copyright }}
+      | Theme by
+      <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
+      {{ end }}
+    </p>
+  </div>
+</footer>
+<!-- /footer -->

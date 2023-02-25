@@ -1,0 +1,53 @@
+- id: read_more
+  translation: Read More
+
+- id: address
+  translation: Our Address
+
+- id: phone
+  translation: Phone Number
+
+- id: email
+  translation: Message Us
+
+- id: contact_form
+  translation: Contact Form
+
+- id: send
+  translation: send message
+
+- id: follow
+  translation: FOLLOW US ON
+
+- id: services
+  translation: Services
+
+- id: contact_info
+  translation: Contact Info
+
+- id: subscribe_newsletter
+  translation: Subscribe Newsletter
+
+- id: subscribe
+  translation: Subscribe
+
+- id: connect_with_us
+  translation: Connect With Us
+
+- id: call_now
+  translation: Call Now
+
+- id: search_placeholder
+  translation: Type & Hit Enter...
+
+- id: latest_article
+  translation: Latest Article
+
+- id: category
+  translation: Category
+
+- id: tags
+  translation: Tags
+
+- id: toc
+  translation: Table of Contents

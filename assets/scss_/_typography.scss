@@ -1,0 +1,136 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $text-color;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: $font-primary;
+  // font-weight: 700;
+  // color: $text-dark; 
+  color: #000;
+  font-family: playfair display, serif;
+  line-height: 1.2
+}
+
+small,
+.small {
+  font-size: 0.8rem;
+}
+
+// List in descending order to prevent extra sort function
+$type-levels: 6, 5, 4, 3, 2, 1;
+
+@each $level in $type-levels {
+  $font-size: $font-size * $font-scale;
+
+  // Output heading styles
+  h#{$level},
+  .h#{$level} {
+    font-size: $font-size;
+    line-height: calc(2px + 2ex + 2px);
+    margin-bottom: 0.65em;
+
+    // responsive for h1, h2, h3, h4
+    &:not(h5, .h5, h6, .h6) {
+      @include desktop {
+        font-size: calc(#{$font-size} * 0.9);
+        margin-bottom: 0.55em;
+      }
+
+      @include tablet {
+        font-size: calc(#{$font-size} * 0.8);
+      }
+    }
+
+    // responsive for h5, h6
+    @include desktop {
+      font-size: calc(#{$font-size} * 0.95);
+      margin-bottom: 0.55em;
+    }
+
+    @include tablet {
+      font-size: calc(#{$font-size} * 0.9);
+    }
+  }
+} 
+
+
+
+
+
+body {
+  line-height: 1.2;
+  font-family: roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: #4c4c4c;
+}
+
+p {
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: roboto, sans-serif
+}
+ 
+h1,
+.h1 {
+  font-size: 80px
+}
+
+@media(max-width:991px) {
+
+  h1,
+  .h1 {
+    font-size: 65px
+  }
+}
+
+h2,
+.h2 {
+  font-size: 60px
+}
+
+@media(max-width:991px) {
+
+  h2,
+  .h2 {
+    font-size: 50px
+  }
+}
+
+h3,
+.h3 {
+  font-size: 40px
+}
+
+h4,
+.h4 {
+  font-size: 22px
+}
+
+h5,
+.h5 {
+  font-size: 18px
+}
+
+h6,
+.h6 {
+  font-size: 14px
+}

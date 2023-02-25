@@ -2,28 +2,24 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/favicon.png"
-logo_dark = "images/favicon.png"
+logo = ""
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "100px"
+logo_width = ""
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Boilerplate"
+logo_text = "Kross"
 # purgeCSS
 purge_css = true
 # navbar fixed to top
-navbar_fixed = false
-# theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+navbar_fixed = false 
+# theme color
+theme_color = "#41228e" 
 # search
 search = true
 # Main Sections
-mainSections = ["blog"]
-# image gallery shortcode
-image_gallery = true
+mainSections = ["blog"] 
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
@@ -38,13 +34,7 @@ copyright = "Copyright by your company"
 # Preloader
 [preloader]
 enable = false
-preloader = "" # use jpg, png, svg or gif format.
-
-# Navigation button
-[navigation_button]
-enable = true
-label = "get a quote"
-link = "contact"
+preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # contact info
 [contact_info]

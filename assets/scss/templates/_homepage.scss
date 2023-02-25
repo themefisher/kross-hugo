@@ -1,0 +1,213 @@
+/* skills */
+.progress-wrapper {
+  height: 130px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 45%;
+    transform: translateX(-50%) rotate(0);
+    animation: rotate 6s linear infinite;
+    z-index: 10;
+  }
+
+  &::after {
+    border-radius: 47%;
+    background-color: rgba(255, 255, 255, .9);
+    transform: translateX(-50%) rotate(0);
+    animation: rotate 10s linear -5s infinite;
+    z-index: 20;
+  }
+}
+
+@keyframes rotate {
+  50% {
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* /skills */
+
+/* education */
+.edu-bg-image {
+  position: absolute;
+  left: 0;
+  top: -300px;
+  z-index: -1;
+}
+
+/* /education */
+
+/* service */
+.hover-bg-primary {
+  transition: .3s ease;
+
+  &:hover {
+    background: $primary-color;
+
+    * {
+      color: $white;
+    }
+  }
+}
+
+.active-bg-primary {
+  transition: .3s ease;
+  background: $primary-color;
+
+  * {
+    color: $white;
+  }
+}
+
+.hover-shadow{
+  transition: .2s ease;
+  &:hover{
+    box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+  }
+}
+
+
+/* /service */
+
+/* portfolio */
+.hover-wrapper {
+  overflow: hidden;
+
+  img {
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+
+    .hover-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba($color: $black, $alpha: .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* /portfolio */
+
+/* testimonial */
+.testimonial-content {
+  strong {
+    color: $secondary-color;
+    font-weight: normal;
+  }
+}
+
+.testimonial-bg-shapes {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-map {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg-shape-1 {
+    position: absolute;
+    left: 100px;
+    top: -50px;
+  }
+
+  .bg-shape-2 {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+  }
+
+  .bg-shape-3 {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+  }
+
+  .bg-shape-4 {
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+  }
+
+  .bg-shape-5 {
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+  }
+}
+
+/* /testimonial */
+
+/* footer */
+.footer-section {
+  padding-top: 200px;
+}
+
+.section-on-footer {
+  margin-bottom: -250px;
+}
+
+.shadow-down {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+/* /footer */

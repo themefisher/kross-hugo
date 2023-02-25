@@ -1,0 +1,33 @@
+.navigation{
+  padding: 40px 130px;
+  transition: .3s ease;
+  &.nav-bg {
+    background-color: $primary-color;
+    padding: 15px 100px;
+    @include desktop {
+      padding: 15px 20px;
+    }
+  }
+  @include desktop {
+    padding: 20px;
+    background: $primary-color;
+  }
+}
+
+.navbar{ 
+  .nav-item{
+    a.nav-link{
+      font-family: $secondary-font; 
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 15px;
+    }
+    &.active{
+      font-weight: bold;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: $white;
+}
