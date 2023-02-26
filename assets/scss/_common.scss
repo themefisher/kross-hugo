@@ -1,10 +1,10 @@
 body {
-  background-color: $body-color;
+  background-color: $body-bg;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: lighten($color: $primary-color, $amount: 10);
+  background: lighten($color: $color-primary, $amount: 10);
   color: $white;
 }
 
@@ -51,14 +51,14 @@ select {
   }
 }
 
-a.text-dark{
-  &:hover{
-    color: $primary-color !important;
+a.text-dark {
+  &:hover {
+    color: $color-primary !important;
   }
 }
 
 a:hover {
-  color: $primary-color;
+  color: $color-primary;
 }
 
 .slick-slide {
@@ -71,7 +71,7 @@ a:hover {
 
   &-title {
     margin-bottom: 80px;
-    font-family: $secondary-font;
+    font-family: $font-secondary;
   }
 }
 
@@ -107,15 +107,15 @@ a:hover {
 }
 
 .bg-primary {
-  background: $primary-color !important;
+  background: $color-primary !important;
 }
 
-.bg-gray{
+.bg-gray {
   background: $gray !important;
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: $color-primary !important;
 }
 
 .text-color {
@@ -123,11 +123,11 @@ a:hover {
 }
 
 .text-dark {
-  color: $text-color-dark !important;
+  color: $text-dark !important;
 }
 
 .text-light {
-  color: $text-color-light !important;
+  color: $text-light !important;
 }
 
 .mb-10 {
@@ -174,7 +174,7 @@ a:hover {
   z-index: 1;
 }
 
-.rounded-lg{
+.rounded-lg {
   border-radius: 15px;
 }
 
@@ -183,18 +183,14 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: $secondary-font !important;
-}
-
-.font-tertiary {
-  font-family: $secondary-font !important;
-}
+  font-family: $font-secondary !important;
+} 
 
 .shadow {
   box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
 }
 
-.bg-dark{
+.bg-dark {
   background-color: #222222 !important;
 }
 
@@ -217,19 +213,22 @@ a:hover {
 /* /icon */
 
 /* slick slider */
-.slick-dots{
+.slick-dots {
   text-align: center;
   padding-left: 0;
-  li{
+
+  li {
     display: inline-block;
     margin: 2px;
-    &.slick-active{
-      button{
+
+    &.slick-active {
+      button {
         background: $white;
         width: 25px;
       }
     }
-    button{
+
+    button {
       height: 6px;
       width: 12px;
       background: rgba($color: $white, $alpha: .5);
@@ -241,34 +240,40 @@ a:hover {
     }
   }
 }
+
 /* /slick slider */
 
 /* form */
-.form-control{
+.form-control {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid $border-color;
   height: 60px;
-  &:focus{
-    border-color: $primary-color;
+
+  &:focus {
+    border-color: $color-primary;
     outline: 0;
     box-shadow: none !important;
   }
 }
 
-textarea.form-control{
+textarea.form-control {
   height: 120px;
 }
+
 /* /form */
 
 /* card */
-.card{
+.card {
   border: 0;
-  &-header{
+
+  &-header {
     border: 0;
   }
-  &-footer{
+
+  &-footer {
     border: 0;
   }
 }
+
 /* /card */

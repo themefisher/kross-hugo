@@ -8,7 +8,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
+          <form action="{{site.Params.contact_form_action}}" method="POST" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -37,12 +37,12 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary"><a
+          <p class="paragraph-lg font-secondary"><a class="text-white"
               href="mailto:{{site.Params.contact_info.email}}">{{site.Params.contact_info.email}}</a></p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary"><a
+          <p class="paragraph-lg font-secondary"><a class="text-white"
               href="tel:{{site.Params.contact_info.mobile}}">{{site.Params.contact_info.mobile}}</a></p>
         </div>
         <div class="col-md-4">
@@ -52,12 +52,13 @@
       </div>
     </div>
   </div>
-  <div class="footer-bottom border-top text-center border-dark py-5">
-    <p>
+  <hr>
+  <div class="footer-bottom text-center border-dark py-4">
+    <p class="copright text-white-50">
       {{ site.Params.copyright | markdownify }}
       {{ if site.Params.theme_copyright }}
       | Theme by
-      <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
+      <a class="text-light" target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
       {{ end }}
     </p>
   </div>

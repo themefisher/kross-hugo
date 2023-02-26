@@ -2,7 +2,7 @@
   padding: 40px 130px;
   transition: .3s ease;
   &.nav-bg {
-    background-color: $primary-color;
+    background-color: $color-primary;
     padding: 15px 100px;
     @include desktop {
       padding: 15px 20px;
@@ -10,14 +10,14 @@
   }
   @include desktop {
     padding: 20px;
-    background: $primary-color;
+    background: $color-primary;
   }
 }
 
 .navbar{ 
   .nav-item{
     a.nav-link{
-      font-family: $secondary-font; 
+      font-family: $font-secondary; 
       font-weight: 700;
       text-transform: uppercase;
       padding: 15px;

@@ -1,0 +1,430 @@
+// ---------------------------------------------
+// skills
+// ---------------------------------------------
+.progress-wrapper {
+  height: 130px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 45%;
+    transform: translateX(-50%) rotate(0);
+    animation: rotate 6s linear infinite;
+    z-index: 10;
+  }
+
+  &::after {
+    border-radius: 47%;
+    background-color: rgba(255, 255, 255, .9);
+    transform: translateX(-50%) rotate(0);
+    animation: rotate 10s linear -5s infinite;
+    z-index: 20;
+  }
+}
+
+@keyframes rotate {
+  50% {
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+// ---------------------------------------------
+// education
+// ---------------------------------------------
+.edu-bg-image {
+  position: absolute;
+  left: 0;
+  top: -300px;
+  z-index: -1;
+}
+
+// ---------------------------------------------
+// service
+// --------------------------------------------- 
+.hover-bg-primary {
+  transition: .3s ease;
+
+  &:hover {
+    background: $color-primary;
+
+    * {
+      color: $white;
+    }
+  }
+}
+
+.active-bg-primary {
+  transition: .3s ease;
+  background: $color-primary;
+
+  * {
+    color: $white;
+  }
+}
+
+.hover-shadow {
+  transition: .2s ease;
+
+  &:hover {
+    box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+  }
+}
+
+// ---------------------------------------------
+// portfolio
+// --------------------------------------------- 
+.page-title {
+  padding: 250px 0 150px;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-shape-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .bg-shape-2 {
+    position: absolute;
+    left: -20px;
+    top: -10px;
+  }
+
+  .bg-shape-3 {
+    position: absolute;
+    left: 10%;
+    top: 100px;
+  }
+
+  .bg-shape-4 {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+  }
+
+  .bg-shape-5 {
+    position: absolute;
+    left: 90px;
+    bottom: -50px;
+    transform: rotate(180deg);
+  }
+
+  .bg-shape-6 {
+    position: absolute;
+    right: 20%;
+    bottom: -20px;
+  }
+
+  .bg-shape-7 {
+    position: absolute;
+    right: -220px;
+    bottom: -100px;
+
+    @include desktop-lg {
+      right: 0;
+    }
+  }
+}
+
+.filter-controls {
+  li {
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.hover-wrapper {
+  overflow: hidden;
+
+  img {
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+
+    .hover-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba($color: $black, $alpha: .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+// ---------------------------------------------
+// testimonial
+// --------------------------------------------- 
+.testimonial-content {
+  strong {
+    color: $color-secondary;
+    font-weight: normal;
+  }
+}
+
+.testimonial-bg-shapes {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-map {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg-shape-1 {
+    position: absolute;
+    left: 100px;
+    top: -50px;
+  }
+
+  .bg-shape-2 {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+  }
+
+  .bg-shape-3 {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+  }
+
+  .bg-shape-4 {
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+  }
+
+  .bg-shape-5 {
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+  }
+}
+
+// ---------------------------------------------
+// Hero Area
+// --------------------------------------------- 
+.hero-area {
+  padding-top: calc((100vh / 2 / 2) + 70px);
+  padding-bottom: calc((100vh / 2 / 2) + 70px);
+  position: relative;
+
+  @include tablet {
+    padding: 250px 0 150px;
+    overflow: hidden;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.layer {
+  position: absolute;
+  z-index: 1;
+}
+
+#l1 {
+  bottom: 0;
+  left: 0;
+}
+
+#l2 {
+  top: 190px;
+  left: -250px;
+}
+
+#l3 {
+  top: 200px;
+  left: 40%;
+}
+
+#l4 {
+  top: 200px;
+  right: 40%;
+}
+
+#l5 {
+  top: 100px;
+  right: -150px;
+}
+
+#l6 {
+  bottom: -20px;
+  left: 10%;
+}
+
+#l7 {
+  bottom: 100px;
+  left: 20%;
+}
+
+#l8 {
+  bottom: 160px;
+  right: 45%;
+}
+
+#l9 {
+  bottom: 100px;
+  right: -10px;
+}
+
+.layer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+// ---------------------------------------------
+// Blog
+// --------------------------------------------- 
+.card-lg {
+  flex-direction: row-reverse;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+blockquote {
+  display: inline-block;
+  padding: 20px 25px;
+  background: $gray;
+  border-left: 3px solid $color-primary;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.content {
+  * {
+    margin-bottom: 20px;
+  }
+
+  strong {
+    font-family: $font-secondary;
+    font-size: 22px;
+    font-weight: normal;
+    color: $text-dark;
+    display: inherit;
+    line-height: 1.5;
+  }
+}
+
+// ---------------------------------------------
+// About
+// ---------------------------------------------  
+.page-title-alt {
+  padding: 350px 0 70px;
+}
+
+.border-thick {
+  border: 10px solid;
+}
+
+.drag-lg-top {
+  margin-top: -230px;
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.page-title-alt {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-shape-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+
+  .bg-shape-2 {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+
+  .bg-shape-3 {
+    position: absolute;
+    left: 30%;
+    top: 50px;
+    transform: rotate(180deg);
+  }
+
+  .bg-shape-4 {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+  }
+
+  .bg-shape-5 {
+    position: absolute;
+    left: 40%;
+    bottom: -25px;
+  }
+
+  .bg-shape-6 {
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+  }
+}

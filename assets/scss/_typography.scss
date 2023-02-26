@@ -1,58 +1,99 @@
-/*  typography */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400');
-
 body {
   line-height: 1.2;
-  font-family: $primary-font;
+  font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: $text-color;
 }
 
-p, .paragraph {
+p,
+.paragraph {
   font-weight: 400;
   color: $text-color;
   font-size: 15px;
   line-height: 1.8;
-  font-family: $primary-font;
-  &-lg{
+  font-family: $font-primary;
+
+  &-lg {
     font-size: 22px;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: $text-color-dark;
-  font-family: $secondary-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-dark;
+  font-family: $font-secondary;
   font-weight: 700;
   line-height: 1.2;
 }
 
-h1, .h1{
+h1,
+.h1 {
   font-size: 80px;
+
   @include desktop {
     font-size: 65px;
   }
-}
 
-h2, .h2{
-  font-size: 60px;
-  @include desktop {
-    font-size: 50px;
+  @include mobile {
+    font-size: 55px;
   }
 }
 
-h3, .h3{
-  font-size: 40px;
+h2,
+.h2 {
+  font-size: 60px;
+
+  @include desktop {
+    font-size: 50px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
-h4, .h4{
-  font-size: 22px;
-}
+// List in descending order to prevent extra sort function
+$type-levels: 6, 5, 4, 3;
 
-h5, .h5{
-  font-size: 18px;
-}
+@each $level in $type-levels {
+  $font-size: $font-size * $font-scale;
 
-h6, .h6{
-  font-size: 14px;
+  // Output heading styles
+  h#{$level},
+  .h#{$level} {
+    font-size: $font-size;
+    line-height: calc(2px + 2ex + 2px);
+    margin-bottom: 0.65em;
+
+    // responsive for h1, h2, h3, h4
+    &:not(h5, .h5, h6, .h6) {
+      @include desktop {
+        font-size: calc(#{$font-size} * 0.9);
+        margin-bottom: 0.55em;
+      }
+
+      @include tablet {
+        font-size: calc(#{$font-size} * 0.8);
+      }
+    }
+
+    // responsive for h5, h6
+    @include desktop {
+      font-size: calc(#{$font-size} * 0.95);
+      margin-bottom: 0.55em;
+    }
+
+    @include tablet {
+      font-size: calc(#{$font-size} * 0.9);
+    }
+  }
 }

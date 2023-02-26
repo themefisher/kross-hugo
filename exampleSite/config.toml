@@ -8,19 +8,14 @@
 [params.variables]
 black = "#000"
 body_color = "#fff"
-border_color = "#ACB9C4"
-color_primary = "#009183"
-color_secondary = "#001111"
-dark = "#222"
-dark_body_color = "#1E262C"
-dark_border_color = "#4e4e4e"
-dark_text_color = "#cbcbcb"
-dark_text_dark = "#fff"
-dark_text_light = "#959595"
+border_color = "#c7c7c7"
+color_primary = "#41228e"
+color_secondary = "#2bfdff" 
 light = "#eee"
-text_color = "#666666"
-text_dark = "#222222"
-text_light = "#959595"
+gray = "#eaeaea"
+text_color = "#4c4c4c"
+text_dark = "#000"
+text_light = "#999999"
 white = "#fff"
 
 # font variables
@@ -36,15 +31,15 @@ font_size = "16px" # default is 16px
 # "augmentedFourth": 1.414,
 # "perfectFifth": 1.5,
 # "goldenRatio": 1.618
-font_scale = "1.25" # default is "majorThird": 1.25
+font_scale = "1.205" # default is "majorThird": 1.25
 
 # go to https://fonts.google.com/ to find the font you want to use. select your font and copy only the bold part from the URL. and paste it here.
 # example: "Work+Sans:wght@400;500;600"
-font_icon = "Font Awesome 6 Free" # https://fontawesome.com/v6/icons
-font_primary = "Work+Sans:wght@400;500;600" 
+font_icon = "themify" # https://themify.me/themify-icons
+font_primary = "Roboto:wght@400" 
 font_primary_type = "sans-serif" # [serif/sans-serif]
-font_secondary = "" 
-font_secondary_type = "" # [serif/sans-serif]
+font_secondary = "Playfair+Display:wght@700" 
+font_secondary_type = "serif" # [serif/sans-serif]
 
 ############################# Plugins ##############################
 
