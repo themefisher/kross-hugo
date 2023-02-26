@@ -9,7 +9,7 @@
       <div class="col-12">
         <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-bs-toggle="buttons">
           <label class="btn btn-sm btn-primary active">
-            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+            <input type="radio" name="shuffle-filter" class="d-none" value="all" checked="checked" />All
           </label>
           {{ $categories := slice }}
           {{ range .Data.Pages }}
@@ -19,7 +19,7 @@
           {{ end }}
           {{ range ( $categories | uniq ) }}
           <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+            <input type="radio" name="shuffle-filter" class="d-none" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
           {{ end }}
         </div>

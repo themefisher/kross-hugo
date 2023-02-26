@@ -108,11 +108,7 @@ mastodon = "" # Your verification code
 
 # google map
 [google_map]
-enable = true
-map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
+enable = true 
 
 # cookies
 [cookies]

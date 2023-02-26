@@ -2,7 +2,7 @@
 
 {{ partial "components/page-title.html" . }}
 
-{{ if site.Params.map.enable }}
+{{ if site.Params.google_map.enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
@@ -10,11 +10,8 @@
         <h2 class="section-title">Find me on Google Map</h2>
       </div>
       <div class="col-12">
-        {{ with site.Params.map }}
-        {{"<!-- Google Map -->" | safeHTML}}
-        <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
-          data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;"></div>
-        {{ end }}
+        <iframe style="height:400px;width:100%;" frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=Washington+D.C.,+DC,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
       </div>
     </div>
   </div>

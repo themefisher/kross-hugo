@@ -116,7 +116,7 @@ $(window).on('load', function () {
 		spaceBetween: 20,
 		speed: 1500,
 		autoplay: {
-			delay: 5000,
+			delay: 2000,
 		},
 		breakpoints: {
 			0: {
@@ -134,45 +134,6 @@ $(window).on('load', function () {
 		},
 	});
 
-	// $('.client-logo-slider').slick({
-	// 	infinite: true,
-	// 	slidesToShow: 5,
-	// 	slidesToScroll: 1,
-	// 	autoplay: true,
-	// 	dots: false,
-	// 	arrows: false,
-	// 	responsive: [{
-	// 		breakpoint: 1024,
-	// 		settings: {
-	// 			slidesToShow: 3,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 600,
-	// 		settings: {
-	// 			slidesToShow: 3,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 480,
-	// 		settings: {
-	// 			slidesToShow: 2,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 400,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	}
-	// 	]
-	// });
-
-	// Shuffle js filter and masonry
 	var containerEl = document.querySelector('.shuffle-wrapper');
 	if (containerEl) {
 		var Shuffle = window.Shuffle;

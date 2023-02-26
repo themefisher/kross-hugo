@@ -199,6 +199,55 @@
   text-align: center;
 }
 
+.project-meta {
+  display: flex;
+  align-items: center;
+}
+
+.project-meta i {
+  height: 100px;
+  min-width: 100px;
+  line-height: 100px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34);
+  font-size: 30px;
+}
+
+.project-meta h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.project-meta p {
+  margin-bottom: 0;
+}
+
+.btn-group-toggle {
+  gap: 10px 0px;
+  label {
+    padding: 12px 50px;
+
+    &:first-child {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    &:not(&:first-child):not(&:last-child) {
+      cursor: pointer;
+      border-radius: 0px;
+    }
+  }
+}
+
 // ---------------------------------------------
 // testimonial
 // --------------------------------------------- 
