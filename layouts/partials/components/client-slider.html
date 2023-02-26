@@ -1,9 +1,13 @@
-<div class="client-logo-slider d-flex align-items-center">
-  {{ range site.Data.homepage.clients_logo_slider.item }}
-  {{ if and ( ne .URL "" ) ( ne .URL "#" ) }}
-  <a href="{{ .URL | safeURL }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></a>
-  {{ else }}
-  <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{.logo | absURL}}" alt="client-logo"></span>
-  {{ end }}
-  {{ end }}
+<div class="client-logo-slider swiper d-flex">
+  <div class="swiper-wrapper align-items-center">
+    {{ range site.Params.logo_slider }}
+    {{ if and ( ne .URL "" ) ( ne .URL "#" ) }}
+    <a href="{{ .URL | safeURL }}" class="swiper-slide text-center d-block outline-0"><img class="d-unset img-fluid"
+        src="{{.logo | absURL}}" alt="client-logo"></a>
+    {{ else }}
+    <span class="swiper-slide text-center d-block outline-0"><img class="d-unset img-fluid" src="{{.logo | absURL}}"
+        alt="client-logo"></span>
+    {{ end }}
+    {{ end }}
+  </div>
 </div>
