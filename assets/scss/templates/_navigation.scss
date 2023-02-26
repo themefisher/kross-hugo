@@ -1,33 +1,68 @@
-.navigation{
+.navigation {
   padding: 40px 130px;
   transition: .3s ease;
+
   &.nav-bg {
     background-color: $color-primary;
     padding: 15px 100px;
+
     @include desktop {
-      padding: 15px 20px;
+      padding: 5px 20px;
     }
   }
+
   @include desktop {
     padding: 20px;
     background: $color-primary;
   }
 }
 
-.navbar{ 
-  .nav-item{
-    a.nav-link{
-      font-family: $font-secondary; 
+.navbar {
+  .nav-item {
+    a.nav-link {
+      font-family: $font-secondary;
       font-weight: 700;
       text-transform: uppercase;
       padding: 15px;
     }
-    &.active{
+
+    &.active {
       font-weight: bold;
+    }
+  }
+
+  &-toggler {
+    padding: 8px 14px;
+
+    &:active,
+    &:hover {
+      box-shadow: none;
+    }
+
+    i {
+      font-size: 18px;
+    }
+
+    .ti-close {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .ti-menu {
+        display: none;
+      }
+
+      .ti-close {
+        display: block;
+      }
     }
   }
 }
 
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
   color: $white;
+
+  &:hover {
+    color: rgba($white, 0.7);
+  }
 }

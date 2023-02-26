@@ -23,6 +23,11 @@
     @content;
   }
 }
+@mixin desktop-xl{
+  @media(min-width:1320px){
+    @content;
+  }
+}
 
 @mixin size($size){
   width: $size; height: $size;

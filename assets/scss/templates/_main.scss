@@ -257,8 +257,8 @@
 // Hero Area
 // --------------------------------------------- 
 .hero-area {
-  padding-top: calc((100vh / 2 / 2) + 70px);
-  padding-bottom: calc((100vh / 2 / 2) + 70px);
+  padding-top: calc((100vh / 2 / 2));
+  padding-bottom: calc((100vh / 2 / 2));
   position: relative;
 
   @include tablet {
@@ -269,6 +269,12 @@
   h1 {
     position: relative;
     z-index: 2;
+  }
+
+  @include mobile {
+    #l5 {
+      display: none;
+    }
   }
 }
 
