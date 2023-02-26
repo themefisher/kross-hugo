@@ -189,17 +189,18 @@
 <!-- portfolio -->
 <section class="section">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .Params.portfolio.title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row shuffle-wrapper">
+    <div class="row filter-container">
       {{ $item:= .Params.portfolio.item_show }}
       {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          {{ partial "image.html" (dict "Src" .Params.image "Alt" "portfolio-image" "Class" `rounded w-100 d-block`) }}
+          {{ partial "image.html" (dict "Src" .Params.image "Alt" "portfolio-image" "Class" `rounded w-100 d-block`)
+          }}
           <div class="hover-overlay">
             <div class="hover-content">
               <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>

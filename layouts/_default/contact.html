@@ -27,7 +27,10 @@
       <div class="col-12">
         <ul class="list-inline social-icons text-center">
           {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
+          <li class="list-inline-item">
+            <a href="{{.URL}}"><i class="{{.icon}}"></i></a>
+            <span class="visually-hidden">{{.title}}</span>
+          </li>
           {{ end }}
         </ul>
       </div>
