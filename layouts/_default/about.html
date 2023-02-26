@@ -28,10 +28,10 @@
       </div>
       <div class="col-md-4 text-center drag-lg-top">
         <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
+          {{ partial "image.html" (dict "Src" .Params.author_image "Alt" "author" "Class" `w-100 rounded-lg border-thick
+          border-white`) }}
         </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
+        {{ partial "image.html" (dict "Src" .Params.author_signature "Alt" "signature") }}
         <h4>{{ site.Params.Author }}</h4>
       </div>
     </div>
@@ -40,8 +40,8 @@
 <!-- /about -->
 
 <!-- Work Process -->
-{{ if site.Data.about.work_process.enable }}
-{{ with site.Data.about.work_process }}
+{{ if .Params.work_process.enable }}
+{{ with .Params.work_process }}
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
@@ -49,8 +49,8 @@
         <h2 class="section-title">{{ .title | markdownify }}</h2>
       </div>
       {{ range .item }}
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="{{ .icon | absURL }}" class="mb-4" alt="icon">
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3"> 
+        {{ partial "image.html" (dict "Src" .icon "Alt" "icon" "Class" `mb-4`) }}
         <h4 class="mb-4">{{ .title }}</h4>
         <p>{{ .content | markdownify }}</p>
       </div>
@@ -63,8 +63,8 @@
 <!-- ./Work Process -->
 
 <!-- team -->
-{{ if site.Data.about.team.enable }}
-{{ with site.Data.about.team }}
+{{ if .Params.team.enable }}
+{{ with .Params.team }}
 <section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
   <div class="container">
     <div class="row">
@@ -89,12 +89,12 @@
 {{ end }}
 <!-- /team -->
 
-{{ if site.Data.about.clients_logo_slider.enable }}
+{{ if .Params.clients_logo_slider.enable }}
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.Data.about.clients_logo_slider.title | markdownify }}</h2>
+        <h2 class="section-title">{{ .Params.clients_logo_slider.title | markdownify }}</h2>
       </div>
     </div>
     {{ partial "components/client-slider.html" . }}

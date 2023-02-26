@@ -1,5 +1,5 @@
 {{ define "main" }}
- 
+
 {{ with .Params.banner }}
 <!-- hero area -->
 <section class="hero-area bg-primary overflow-hidden" id="parallax">
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="layer-bg w-100">
-    <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
+    {{ partial "image.html" (dict "Src" "images/illustrations/leaf-bg.png" "Alt" "bg-shape" "Class" `w-100`) }}
   </div>
   <div class="layer" id="l2">
     <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
@@ -37,8 +37,9 @@
   <div class="layer" id="l9">
     <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
   </div>
+
   <!-- social icon -->
-  <ul class="list-unstyled ms-5 mt-3 position-relative zindex-1">
+  <ul class="social-icon list-unstyled ms-3 ms-sm-5 mt-3 position-relative zindex-1">
     {{ range site.Params.social }}
     <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
     {{ end }}
@@ -109,7 +110,7 @@
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center">
-        <img src="{{.logo | relURL }}" alt="icon">
+        {{ partial "image.html" (dict "Src" .logo "Alt" "icon") }}
         <p class="mb-0">{{.duration}}</p>
         <h4>{{.title }}</h4>
         <h6 class="text-light">{{.company }}</h6>
@@ -148,7 +149,8 @@
     </div>
   </div>
   <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
+  {{ partial "image.html" (dict "Src" "images/backgrounds/education-bg.png" "Alt" "bg-image" "Class" `edu-bg-image
+  w-100`) }}
 </section>
 <!-- /education -->
 {{ end }}
@@ -197,7 +199,7 @@
       {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          {{ partial "image.html" (dict "Src" .Params.image "Alt" "portfolio-image" "Class" `rounded w-100 d-block`) }}
           <div class="hover-overlay">
             <div class="hover-content">
               <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
@@ -228,7 +230,8 @@
         <div class="text-center testimonial-content">
           <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
           <p class="text-white mb-4">{{.content | markdownify}}</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
+          {{ partial "image.html" (dict "Src" .image "Alt" "client-image" "Class" `rounded-circle mb-4 d-inline-block`)
+          }}
           <h4 class="text-white">{{.name }}</h4>
           <h6 class="text-light mb-4">{{ .designation }}</h6>
         </div>
@@ -237,12 +240,12 @@
     </div>
   </div>
   <!-- bg shapes -->
-  <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-  <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-  <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-  <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-  <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-  <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
+  {{ partial "image.html" (dict "Src" "images/backgrounds/map.png" "Alt" "map" "Class" `bg-map`) }}
+  {{ partial "image.html" (dict "Src" "images/illustrations/dots-group-v.svg" "Alt" "map" "Class" `bg-shape-1`) }}
+  {{ partial "image.html" (dict "Src" "images/illustrations/leaf-orange.svg" "Alt" "map" "Class" `bg-shape-2`) }}
+  {{ partial "image.html" (dict "Src" "images/illustrations/dots-group-sm.svg" "Alt" "map" "Class" `bg-shape-3`) }}
+  {{ partial "image.html" (dict "Src" "images/illustrations/leaf-pink-round.svg" "Alt" "map" "Class" `bg-shape-4`) }}
+  {{ partial "image.html" (dict "Src" "images/illustrations/leaf-cyan.svg" "Alt" "map" "Class" `bg-shape-5`) }}
 </section>
 <!-- /testimonial -->
 {{ end }}

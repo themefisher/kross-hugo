@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 mb-5">
-        <img src="{{ .Params.image | absURL }}" class="img-fluid w-100" alt="{{ .Title }}">
+        {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Class" `w-100`) }}
       </div>
       <div class="col-lg-7 mb-5 mb-lg-0 align-self-center">
         <div class="row mx-0">
