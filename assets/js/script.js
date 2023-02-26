@@ -110,43 +110,67 @@ $(window).on('load', function () {
 
 
 	// clients logo slider
-	$('.client-logo-slider').slick({
-		infinite: true,
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		autoplay: true,
-		dots: false,
-		arrows: false,
-		responsive: [{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
+	new Swiper(".client-logo-slider", {
+		loop: true,
+		autoHeight: true,
+		spaceBetween: 20,
+		speed: 1500,
+		autoplay: {
+			delay: 5000,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
 			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
+			480: {
+				slidesPerView: 2,
 			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
+			600: {
+				slidesPerView: 3,
 			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
+			1024: {
+				slidesPerView: 5,
+			},
+		},
 	});
+
+	// $('.client-logo-slider').slick({
+	// 	infinite: true,
+	// 	slidesToShow: 5,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	dots: false,
+	// 	arrows: false,
+	// 	responsive: [{
+	// 		breakpoint: 1024,
+	// 		settings: {
+	// 			slidesToShow: 3,
+	// 			slidesToScroll: 1
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 600,
+	// 		settings: {
+	// 			slidesToShow: 3,
+	// 			slidesToScroll: 1
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 480,
+	// 		settings: {
+	// 			slidesToShow: 2,
+	// 			slidesToScroll: 1
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 400,
+	// 		settings: {
+	// 			slidesToShow: 1,
+	// 			slidesToScroll: 1
+	// 		}
+	// 	}
+	// 	]
+	// });
 
 	// Shuffle js filter and masonry
 	var containerEl = document.querySelector('.shuffle-wrapper');
@@ -164,7 +188,5 @@ $(window).on('load', function () {
 			}
 		});
 	}
-
-
 
 })(jQuery);
