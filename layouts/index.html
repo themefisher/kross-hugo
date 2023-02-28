@@ -194,7 +194,7 @@
         <h2 class="section-title">{{ .Params.portfolio.title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row filter-container">
+    <div class="row shuffle-wrapper">
       {{ $item:= .Params.portfolio.item_show }}
       {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
