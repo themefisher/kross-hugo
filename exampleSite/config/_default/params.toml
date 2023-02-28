@@ -33,7 +33,7 @@ theme_copyright = true
 
 # Preloader
 [preloader]
-enable = false 
+enable = true 
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # contact info
