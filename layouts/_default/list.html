@@ -6,7 +6,7 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        {{ range .Data.Pages }}
+        {{ range .RegularPages }}
         {{ .Render "post" }}
         {{ end }}
       </div>

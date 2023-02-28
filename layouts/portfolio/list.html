@@ -12,7 +12,7 @@
             <input type="radio" name="shuffle-filter" class="d-none" value="all" checked="checked" />All
           </label>
           {{ $categories := slice }}
-          {{ range .Data.Pages }}
+          {{ range .RegularPages }}
           {{ range .Params.categories }}
           {{ $categories = $categories | append . }}
           {{ end }}
@@ -29,8 +29,8 @@
       {{ range .RegularPages }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item"
         data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+        <div class="position-relative rounded hover-wrapper"> 
+          {{ partial "image.html" (dict "Src" .Params.image "Alt" "portfolio-image"  "Class" `rounded w-100 d-block`) }}
           <div class="hover-overlay">
             <div class="hover-content">
               <a class="btn btn-light btn-sm" href="{{ .Permalink }}">view project</a>

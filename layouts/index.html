@@ -225,18 +225,23 @@
       <div class="col-12 text-center">
         <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
       </div>
-      <div class="col-lg-10 mx-auto testimonial-slider">
-        {{ range .item }}
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">{{.content | markdownify}}</p>
-          {{ partial "image.html" (dict "Src" .image "Alt" "client-image" "Class" `rounded-circle mb-4 d-inline-block`)
-          }}
-          <h4 class="text-white">{{.name }}</h4>
-          <h6 class="text-light mb-4">{{ .designation }}</h6>
+      <div class="col-lg-10 mx-auto swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          {{ range .item }}
+          <div class="swiper-slide">
+            <div class="text-center testimonial-content">
+              <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+              <p class="text-white mb-4">{{.content | markdownify}}</p>
+              {{ partial "image.html" (dict "Src" .image "Alt" "client-image" "Class" `rounded-circle mb-4
+              d-inline-block`)
+              }}
+              <h4 class="text-white">{{.name }}</h4>
+              <h6 class="text-light mb-4">{{ .designation }}</h6>
+            </div>
+          </div>
+          {{ end }}
         </div>
-        {{ end }}
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>

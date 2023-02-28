@@ -61,10 +61,6 @@ a:hover {
   color: $color-primary;
 }
 
-.slick-slide {
-  outline: 0;
-}
-
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -221,35 +217,6 @@ a:hover {
 
   i {
     font-size: 17px;
-  }
-}
-
-/* slick slider */
-.slick-dots {
-  text-align: center;
-  padding-left: 0;
-
-  li {
-    display: inline-block;
-    margin: 2px;
-
-    &.slick-active {
-      button {
-        background: $white;
-        width: 25px;
-      }
-    }
-
-    button {
-      height: 6px;
-      width: 12px;
-      background: rgba($color: $white, $alpha: .5);
-      color: transparent;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .2s ease;
-      border: 0;
-    }
   }
 }
 

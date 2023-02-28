@@ -1,46 +1,41 @@
 (function ($) {
 	'use strict';
 
-	// check if element exist
-	function isElementExist(element) {
-		if (typeof (element) != 'undefined' && element != null) {
-			return true;
+	// ----------------------------------------
+	// Sticky Menu
+	// ---------------------------------------- 
+	window.addEventListener('scroll', function () {
+		var navigation = document.querySelector('.navigation');
+		if (this.document.documentElement.scrollTop > 100) {
+			navigation.classList.add('nav-bg');
+		} else {
+			navigation.classList.remove('nav-bg');
 		}
-		return false;
+	});
+
+	// ----------------------------------------
+	// Background Color
+	// ---------------------------------------- 
+	var elementsWithDataColor = document.querySelectorAll('[data-color]');
+	for (var i = 0; i < elementsWithDataColor.length; i++) {
+		var element = elementsWithDataColor[i];
+		var backgroundColor = element.getAttribute('data-color');
+		element.style.backgroundColor = backgroundColor;
 	}
 
-	// Sticky Menu
-	$(window).scroll(function () {
-		if ($('.navigation').offset().top > 100) {
-			$('.navigation').addClass('nav-bg');
-		} else {
-			$('.navigation').removeClass('nav-bg');
-		}
-	});
+	// ----------------------------------------
+	// Progress Bar
+	// ---------------------------------------- 
+	let progress = document.querySelectorAll('[data-progress]');
+	for (let i = 0; i < progress.length; i++) {
+		let element = progress[i];
+		let progressValue = element.getAttribute('data-progress');
+		element.style.bottom = progressValue;
+	}
 
-	// Background-images
-	$('[data-background]').each(function () {
-		$(this).css({
-			'background-image': 'url(' + $(this).data('background') + ')'
-		});
-	});
-
-	// background color
-	$('[data-color]').each(function () {
-		$(this).css({
-			'background-color': $(this).data('color')
-		});
-	});
-
-	// progress bar
-	$('[data-progress]').each(function () {
-		$(this).css({
-			'bottom': $(this).data('progress')
-		});
-	});
-
-
-	/* ########################################### hero parallax ############################################## */
+	// ----------------------------------------
+	// Hero Parallax
+	// ---------------------------------------- 
 	window.onload = function () {
 
 		var parallaxBox = document.getElementById('parallax');
@@ -90,7 +85,6 @@
 		};
 
 	};
-
 	function mouseParallax(id, left, top, mouseX, mouseY, speed) {
 		var obj = document.getElementById(id);
 		var parentObj = obj.parentNode,
@@ -99,20 +93,22 @@
 		obj.style.left = left - (((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) * speed) + 'px';
 		obj.style.top = top - (((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) * speed) + 'px';
 	}
-	/* ########################################### /hero parallax ############################################## */
 
-	// testimonial-slider
-	$('.testimonial-slider').slick({
-		dots: true,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		arrows: false,
-		adaptiveHeight: true
+	// ----------------------------------------
+	// Testimonial Slider 
+	// ----------------------------------------  
+	new Swiper(".testimonial-slider", {
+		loop: true,
+		spaceBetween: 20,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
 	});
 
-
-	// clients logo slider
+	// ----------------------------------------
+	// Clients Logo Slider
+	// ----------------------------------------  
 	new Swiper(".client-logo-slider", {
 		loop: true,
 		autoHeight: true,
@@ -137,7 +133,9 @@
 		},
 	});
 
+	// ----------------------------------------
 	// Shuffle js filter and masonry
+	// ---------------------------------------- 
 	var containerEl = document.querySelector('.shuffle-wrapper');
 	if (containerEl) {
 		var Shuffle = window.Shuffle;
@@ -146,12 +144,12 @@
 			buffer: 1
 		});
 
-		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-			var input = evt.currentTarget;
-			if (input.checked) {
-				myShuffle.filter(input.value);
-			}
+		document.querySelectorAll('input[name="shuffle-filter"]').forEach(btn => {
+			btn.addEventListener("change", () => {
+				if (btn.checked) {
+					myShuffle.filter(btn.value);
+				}
+			});
 		});
 	}
-
-})(jQuery);
+})();
