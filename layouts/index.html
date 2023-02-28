@@ -41,7 +41,7 @@
   <!-- social icon -->
   <ul class="social-icon list-unstyled ms-3 ms-sm-5 mt-3 position-relative zindex-1">
     {{ range site.Params.social }}
-    <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="{{.link | safeURL }}"><i class="{{.icon}}"></i><span class="visually-hidden">{{.title}}</span></a></li>
     {{ end }}
   </ul>
   <!-- /social icon -->
@@ -87,7 +87,7 @@
             <div class="wave" data-progress="{{.progress}}"></div>
           </div>
           <div class="card-footer bg-white p-4">
-            <h4 class="card-title m-0">{{.title }} ({{.progress}})</h4>
+            <h3 class="h4 card-title m-0">{{.title }} ({{.progress}})</h3>
           </div>
         </div>
       </div>
@@ -112,8 +112,8 @@
       <div class="col-lg-3 col-md-4 text-center">
         {{ partial "image.html" (dict "Src" .logo "Alt" "icon") }}
         <p class="mb-0">{{.duration}}</p>
-        <h4>{{.title }}</h4>
-        <h6 class="text-light">{{.company }}</h6>
+        <h3 class="h4">{{.title }}</h3>
+        <h4 class="h6 text-light">{{.company }}</h4>
       </div>
       {{ end }}
     </div>
@@ -140,7 +140,7 @@
           </div>
           <div>
             <p class="text-dark mb-1">{{.year}}</p>
-            <h4>{{ .title }}</h4>
+            <h3 class="h4">{{ .title }}</h3>
             <p class="mb-0 text-light">{{.academy}}</p>
           </div>
         </div>
@@ -171,7 +171,7 @@
         <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
           <div class="card-body text-center px-4 py-5">
             <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">{{.title}}</h4>
+            <h3 class="h4 mb-4">{{.title}}</h3>
             <p>{{.content | markdownify}}</p>
           </div>
         </div>
@@ -235,8 +235,8 @@
               {{ partial "image.html" (dict "Src" .image "Alt" "client-image" "Class" `rounded-circle mb-4
               d-inline-block`)
               }}
-              <h4 class="text-white">{{.name }}</h4>
-              <h6 class="text-light mb-4">{{ .designation }}</h6>
+              <h3 class="h4 text-white">{{.name }}</h3>
+              <h4 class="h6 text-light mb-4">{{ .designation }}</h4>
             </div>
           </div>
           {{ end }}

@@ -3,10 +3,10 @@
     <a href="{{.Permalink}}" title="{{.Title }}">
       {{ partial "image.html" (dict "Src" .Params.Image "Alt" .Title "Class" `mb-4`) }} 
     <div class="card-body">
-      <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
-      </h4>
+      <h3 class="h4 card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
+      </h3>
       <p class="cars-text">{{.Summary}}</p>
-      <a href="{{.Permalink}}" class="btn btn-sm btn-primary">Read More</a>
+      <a href="{{.Permalink}}" class="btn btn-sm btn-primary">Read More <span class="visually-hidden">Details</span></a>
     </div>
   </article>
 </div>
