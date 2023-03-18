@@ -50,6 +50,20 @@
   }
 }
 
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid $white;
+  color: $white;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    box-shadow: none !important;
+    background: lighten($color: $color-primary, $amount: 10) !important;
+  }
+}
+
 .btn-transparent {
   background: transparent;
   color: $color-primary;
