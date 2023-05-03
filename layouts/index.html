@@ -87,7 +87,7 @@
             <div class="wave" data-progress="{{.progress}}"></div>
           </div>
           <div class="card-footer bg-white p-4">
-            <h3 class="h4 card-title m-0">{{.title }} ({{.progress}})</h3>
+            <h3 class="h5 card-title m-0">{{.title }} ({{.progress}})</h3>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
       <div class="col-lg-3 col-md-4 text-center">
         {{ partial "image.html" (dict "Src" .logo "Alt" "icon") }}
         <p class="mb-0">{{.duration}}</p>
-        <h3 class="h4">{{.title }}</h3>
+        <h3 class="h5">{{.title }}</h3>
         <h4 class="h6 text-light">{{.company }}</h4>
       </div>
       {{ end }}
@@ -140,7 +140,7 @@
           </div>
           <div>
             <p class="text-dark mb-1">{{.year}}</p>
-            <h3 class="h4">{{ .title }}</h3>
+            <h3 class="h5">{{ .title }}</h3>
             <p class="mb-0 text-light">{{.academy}}</p>
           </div>
         </div>
@@ -171,7 +171,7 @@
         <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
           <div class="card-body text-center px-4 py-5">
             <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-            <h3 class="h4 mb-4">{{.title}}</h3>
+            <h3 class="h5 mb-4">{{.title}}</h3>
             <p>{{.content | markdownify}}</p>
           </div>
         </div>
@@ -235,8 +235,8 @@
               {{ partial "image.html" (dict "Src" .image "Alt" "client-image" "Class" `rounded-circle mb-4
               d-inline-block`)
               }}
-              <h3 class="h4 text-white">{{.name }}</h3>
-              <h4 class="h6 text-light mb-4">{{ .designation }}</h4>
+              <h3 class="h5 text-white">{{.name }}</h3>
+              <span class="fs-6 text-secondary d-block text-light mb-4 designation">{{ .designation }}</span>
             </div>
           </div>
           {{ end }}

@@ -3,11 +3,11 @@
     {{ range site.Params.logo_slider }}
     {{ if and ( ne .URL "" ) ( ne .URL "#" ) }}
     <a href="{{ .URL | safeURL }}" class="swiper-slide text-center d-block outline-0">
-      {{ partial "image.html" (dict "Src" .logo "Alt" "client-logo" "Class" `d-unset`) }}
+      {{ partial "image.html" (dict "Src" .logo "Alt" "client-logo" "Size" "x30" "Class" `d-unset`) }}
     </a>
     {{ else }}
     <span class="swiper-slide text-center d-block outline-0">
-      {{ partial "image.html" (dict "Src" .logo "Alt" "client-logo" "Class" `d-unset`) }}
+      {{ partial "image.html" (dict "Src" .logo "Alt" "client-logo" "Size" "x30" "Class" `d-unset`) }}
     </span>
     {{ end }}
     {{ end }}

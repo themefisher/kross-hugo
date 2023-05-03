@@ -24,6 +24,9 @@ google_tag_manager = "" # example: G-XXXXXXXXXX
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 
+# Author
+author = "Johnathan Smith"
+
 # copyright
 copyright = "Copyright by your company"
 theme_copyright = true

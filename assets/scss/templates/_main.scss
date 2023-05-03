@@ -228,6 +228,7 @@
 
 .btn-group-toggle {
   gap: 10px 0px;
+
   label {
     padding: 12px 50px;
 
@@ -255,23 +256,31 @@
   .swiper-wrapper {
     padding-bottom: 30px;
   }
-  .swiper-pagination {  
+
+  .swiper-pagination {
     .swiper-pagination-bullet {
       transition: width 0.4s;
       background-color: $white;
       width: 14px;
       height: 6px;
       border-radius: 15px;
+
       &-active {
         width: 30px;
       }
     }
   }
 }
+
 .testimonial-content {
   strong {
     color: $color-secondary;
     font-weight: normal;
+  }
+
+  .designation {
+    font-family: $font-secondary;
+    font-size: 14px;
   }
 }
 
