@@ -1,13 +1,13 @@
 {
   "name": "kross-hugo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "author": "gethugothemes",
   "scripts": {
     "dev": "cd exampleSite; hugo server || hugo server --themesDir ../..",
-    "test": "cd exampleSite; hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify || hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
-    "build": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic || hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
-    "update": "hugo mod clean && hugo mod get -u ./... && hugo mod tidy"
+    "test": "cd exampleSite; hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "build": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "update": "hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
