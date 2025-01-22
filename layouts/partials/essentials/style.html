@@ -32,7 +32,7 @@
 
 <!-- Purge CSS in Production -->
 {{ if and hugo.IsProduction site.Params.purge_css }}
-  {{ $styles = $styles | resources.PostCSS | fingerprint "sha256" }}
+  {{ $styles = $styles | css.PostCSS | fingerprint "sha256" }}
   {{ $styles = $styles | resources.PostProcess }}
 {{ end }}
 

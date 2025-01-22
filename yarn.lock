@@ -17,7 +17,7 @@
     "@nodelib/fs.stat" "2.0.5"
     run-parallel "^1.1.9"
 
-"@nodelib/fs.stat@2.0.5", "@nodelib/fs.stat@^2.0.2":
+"@nodelib/fs.stat@^2.0.2", "@nodelib/fs.stat@2.0.5":
   version "2.0.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
   integrity sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==
@@ -390,7 +390,7 @@ postcss-selector-parser@^6.0.7:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-postcss@^8.4.20, postcss@^8.4.4:
+postcss@^8.0.0, postcss@^8.1.0, postcss@^8.4.20, postcss@^8.4.4, postcss@>=8.0.9:
   version "8.4.21"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.21.tgz"
   integrity sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==
@@ -406,7 +406,7 @@ prettier-plugin-go-template@0.0.13:
   dependencies:
     ulid "^2.3.0"
 
-prettier@^2.8.1:
+prettier@^2.0.0, prettier@^2.8.1:
   version "2.8.4"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.4.tgz"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==

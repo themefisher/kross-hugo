@@ -1,13 +1,18 @@
 {
   "name": "kross-hugo",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "license": "UNLICENSED",
   "author": "gethugothemes",
   "scripts": {
-    "dev": "cd exampleSite; hugo server || hugo server --themesDir ../..",
-    "test": "cd exampleSite; hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
-    "build": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
-    "update": "hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy"
+    "dev": "hugo server",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
+    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
+    "dev:example": "cd exampleSite; hugo server --themesDir ../..",
+    "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
+    "preview:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
+    "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
+    "project-setup": "node ./scripts/projectSetup.js",
+    "theme-setup": "node ./scripts/themeSetup.js"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
