@@ -1,7 +1,7 @@
 <div class="col-lg-4 col-sm-6 mb-4">
   <article class="card shadow overflow-hidden">
     <a href="{{.Permalink}}" title="{{.Title }}">
-      {{ partial "image.html" (dict "Src" .Params.Image "Alt" .Title) }} 
+      {{ partial "image.html" (dict "Src" .Params.Image "Alt" .Title "Size" `500x`) }} 
     <div class="card-body p-4">
       <h3 class="h4 card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
       </h3>
